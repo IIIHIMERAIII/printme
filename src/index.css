@@ -1,3 +1,7 @@
+@import '/node_modules/modern-normalize/modern-normalize.css';
+@import '../node_modules/simplebar-react/dist/simplebar.min.css';
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,57 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* global styled */
+
+p { 
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Advantages ScrollBar */
+
+.simplebar-wrapper {
+  height: 250px;
+}
+
+.simplebar-track {
+  background-color: white;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 50px;
+}
+
+.simplebar-scrollbar::before {
+  margin-left: 10px;
+  background-color: #f5821f;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.simplebar-scrollbar.simplebar-visible::before{
+  opacity: 1;
+}
+
+.simplebar-content-wrapper {
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease-out;
 }
