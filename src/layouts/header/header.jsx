@@ -5,7 +5,7 @@ import {
     TriColorLine,
     ContactsWrapper,
 } from "./styled"
-import { Container } from "../../assets/styled"
+import { Container } from "../../assets/container"
 import { Logo } from "../../components/logo/logo"
 import { Contacts } from "../../components/contacts/contacts"
 import { NavBar } from "../../components/navBar/navBar"

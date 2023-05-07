@@ -15,7 +15,7 @@ background: ${colors.primaryGray};
 export const Text = styled.p`
 color: ${colors.primaryWhite};
 font-size: 14px;
-margin-left: 185px;
+margin-left: 110px;
 `;
 
 export const TriColorLine = styled.hr`

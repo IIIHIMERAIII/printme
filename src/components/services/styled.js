@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+
+export const ServicesWrapper = styled.section`
+padding-top: 80px;
+`;
+
 export const ServicesTitle = styled.h3`
 font-size: 50px;
 text-align: center;

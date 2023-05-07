@@ -1,5 +1,5 @@
 import { NavWrapper, NavList, NavListItem, NavLink} from "./styled"
-import { Container} from "../../assets/styled"
+import { Container } from "../../assets/container"
 
 export const NavBar = () => {
     return (

@@ -1,9 +1,9 @@
 import { Btn } from "./styled";
 
-export const Button = ({Text}) => {
+export const Button = ({text}) => {
     return (
         <>
-            <Btn>{Text}</Btn>
+            <Btn>{text}</Btn>
         </>
     )
 }

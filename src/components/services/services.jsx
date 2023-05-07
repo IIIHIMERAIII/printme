@@ -1,4 +1,5 @@
 import {
+    ServicesWrapper,
     ServicesTitle,
     FlexContainer,
     CategoryWrapper,
@@ -10,11 +11,12 @@ import {
     ItemImg,
     ItemTitle,
 } from "./styled";
-import { Container } from "../../assets/styled";
+import { Container } from "../../assets/container";
 import testImage from '../../images/test.jpg';
 
 export const Services = () => {
     return (
+        <ServicesWrapper>
             <Container>
                 <ServicesTitle>Наші послуги</ServicesTitle>
             <FlexContainer>
@@ -82,5 +84,6 @@ export const Services = () => {
                 </CategoryWrapper>
             </FlexContainer>
             </Container>
+        </ServicesWrapper>
     )
 }

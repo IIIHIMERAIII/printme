@@ -10,7 +10,7 @@ import {
 import sprite from '../../images/sprite.svg';
 import { colors } from "../../assets/theme";
 
-export const AdvantagesScrollBox = () => {
+export const ScrollBox = () => {
     return (
         <ScrollBar>
             <ScrollBarList>
