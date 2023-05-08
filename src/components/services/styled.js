@@ -21,7 +21,7 @@ margin-left: 25px;
 `;
 
 export const MainImg = styled.img`
-width: 430px;
+width: 580px;
 height: 715px;
 border-radius: 16px;
 box-shadow: -13px 41px 50px -4px rgba(0,0,0,0.3);
