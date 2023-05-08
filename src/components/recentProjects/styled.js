@@ -26,10 +26,10 @@ flex-wrap: wrap;
 `;
 
 export const ListItem = styled.li`
-width: 460px;
-margin-bottom: -20px;
+margin-bottom: -3px;
+width: 33.3%;
 `;
 
 export const ItemImg = styled.img`
-
+width: 100%;
 `
