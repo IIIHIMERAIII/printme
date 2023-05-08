@@ -2,6 +2,7 @@ export const colors = {
     primaryGray: '#2d2d2d',
     primaryWhite: '#ffffff',
     primartBlack: '#000000',
+    subGray: '#212121',
     iconText: '#00425d',
     orange: '#f5821f',
     pink: '#a011c8',

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { vars } from '../../assets/theme';
 
 export const SwitcherWrapper = styled.div`
 width: 500px;
