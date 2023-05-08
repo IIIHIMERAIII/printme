@@ -8,10 +8,12 @@ display: flex;
 padding-top: 80px;
 padding-bottom: 170px;
 position: relative;
+height: 580px;
 `;
 
 export const HeroWrapper = styled.div`
 margin-left: 110px;
+width: 500px;
 `;
 
 export const HeroTitle = styled.h1`
@@ -21,11 +23,14 @@ color: ${colors.primaryWhite};
 `;
 
 export const HeroSlider = styled.div`
-
+position: absolute;
+right: 0;
 `;
 
 export const SliderImg = styled.img`
-
+position: relative;
+right: 0;
+width: 800px;
 `;
 
 export const SliderBtn = styled.button`
