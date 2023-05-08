@@ -11,6 +11,11 @@ import {
     NavList,
     NavListItem,
     NavLink,
+    ContactsTitle,
+    ContactsWrapper,
+    ContactsList,
+    ContactsListItem,
+    ContactsLink,
     SubFooter,
 } from "./styled"
 import {Container} from '../../assets/container'
@@ -29,6 +34,7 @@ const productsItems = [
     'Створення логотипів',
     'Сувенірна продукція та поліграфія',
 ];
+const contactsItems = ['+380504049636', '+380684049636', 'mailto:exgrafika17@gmail.com'];
 
 export const Footer = () => {
     return (
@@ -66,6 +72,16 @@ export const Footer = () => {
                             </NavList>
                         </ListsWrapper>
                     </NavWrapper>
+                    <ContactsWrapper>
+                        <ContactsTitle>Контакти</ContactsTitle>
+                        <ContactsList>
+                        {contactsItems.map((item, index) => (
+                            <ContactsListItem key={index}>
+                                  <ContactsLink>{item}</ContactsLink>
+                            </ContactsListItem>
+                        ))}
+                        </ContactsList>
+                    </ContactsWrapper>
                 </Container>
                 <SubFooter>
 

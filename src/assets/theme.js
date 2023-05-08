@@ -4,6 +4,7 @@ export const colors = {
     primartBlack: '#000000',
     subGray: '#212121',
     iconText: '#00425d',
+    blue: '#4158D0',
     orange: '#f5821f',
     pink: '#a011c8',
     categoryTitleBg: '#201e1d',
@@ -11,7 +12,6 @@ export const colors = {
     rocketColor: '#ff4e4e',
     cardColor: '#888',
     talkColor: '#b0a2f4',
-    
 };
 
 export const vars = {
