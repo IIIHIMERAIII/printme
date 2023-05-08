@@ -33,7 +33,7 @@ export const Services = () => {
             <FlexContainer>
                 <MainImgWrapper>
                     <MainImg src={s1} />
-                    <MaingTitle>Подивись усі послуги</MaingTitle>
+                    <MaingTitle>Подивитись усі послуги</MaingTitle>
                 </MainImgWrapper>
                 <CategoryWrapper>
                     <CategoryList>

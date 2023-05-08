@@ -49,7 +49,7 @@ export const MaingTitle = styled.p`
 padding: 15px;
 display: flex;
 flex-wrap: wrap;
-width: 430px;
+width: 580px;
 font-size: 20px;
 position: absolute;
 text-align: center;
