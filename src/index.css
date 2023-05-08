@@ -74,7 +74,7 @@ a {
 .custom_btn {
   width: 120px;
   height: 40px;
-  color: #fff;
+  color: black;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -88,13 +88,11 @@ a {
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
   outline: none;
-  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  background: #b1b1b380;
   line-height: 42px;
   padding: 0;
   border: none;
 }
-
-
 
 .custom_btn span {
   position: relative;

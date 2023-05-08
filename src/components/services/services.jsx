@@ -12,74 +12,39 @@ import {
     ItemTitle,
 } from "./styled";
 import { Container } from "../../assets/container";
-import testImage from '../../images/test.jpg';
+import s1 from '../../images/s1.jpg';
+import s2 from '../../images/s2.jpg';
+import s3 from '../../images/s3.jpg';
+import s4 from '../../images/s4.jpg';
+import s5 from '../../images/s5.jpg';
+
+const servicesItems = [
+    { img: s2, title: 'Зовнішня реклама' },
+    { img: s3, title: 'Брендування авто' },
+    { img: s4, title: 'Виставкові стенди' },
+    { img: s5, title: `Інтер'єрна реклама` }
+];
 
 export const Services = () => {
     return (
         <ServicesWrapper>
-            <Container>
+            <Container style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
                 <ServicesTitle>Наші послуги</ServicesTitle>
             <FlexContainer>
                 <MainImgWrapper>
-                    <MainImg src={testImage} />
-                    <MaingTitle>Ми працюємо для вас</MaingTitle>
+                    <MainImg src={s1} />
+                    <MaingTitle>Подивись усі послуги</MaingTitle>
                 </MainImgWrapper>
                 <CategoryWrapper>
                     <CategoryList>
-                        <ListItem>
+                        {servicesItems.map((item, index) => (
+                        <ListItem key={index}>
                             <ItemImg
-                                src={testImage}
+                                src={item.img}
                             />
-                            <ItemTitle>Інтер'єрна реклама</ItemTitle>
+                                <ItemTitle>{item.title}</ItemTitle>
                         </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Брендування авто</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Виготовлення печаток та штампів</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Виставкові стенди</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Герби та фірмова символіка</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Зовнішня реклама</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Оформлення композитом</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Створення логотипів</ItemTitle>
-                        </ListItem>
-                        <ListItem>
-                            <ItemImg
-                                src={testImage}
-                            />
-                            <ItemTitle>Сувенірна продукція та поліграфія</ItemTitle>
-                        </ListItem>
+                        ))}
                     </CategoryList>
                 </CategoryWrapper>
             </FlexContainer>

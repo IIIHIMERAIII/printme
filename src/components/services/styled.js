@@ -24,6 +24,7 @@ export const MainImg = styled.img`
 width: 430px;
 height: 715px;
 border-radius: 16px;
+box-shadow: -13px 41px 50px -4px rgba(0,0,0,0.3);
 `;
 
 export const CategoryList = styled.ul`
@@ -33,8 +34,9 @@ flex-wrap: wrap;
 `;
 
 export const ListItem = styled.li`
-position: relative;
 border-radius: 16px;
+display: flex;
+flex-direction: column;
 box-shadow: -13px 41px 50px -4px rgba(0,0,0,0.3);
 `;
 
@@ -61,24 +63,18 @@ backdrop-filter: blur(3.4px);
 `;
 
 export const ItemImg = styled.img`
-width: 220px;
-height: 220px;
-border-radius: 16px;
+border-radius: 16px 16px 0px 0px;
+display:inline-block;
 `;
 
 export const ItemTitle = styled.p`
-padding: 15px;
-display: flex;
-flex-wrap: wrap;
-width: 220px;
+padding: 21px;
 font-size: 20px;
-position: absolute;
-text-align: center;
-bottom: 0px;
 background: rgba(128, 127, 127, 0.53);
 border-bottom-right-radius: 16px;
 border-bottom-left-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(3.4px);
+vertical-align: middle;
 -webkit-backdrop-filter: blur(3.4px);
 `;
