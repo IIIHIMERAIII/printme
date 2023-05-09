@@ -14,7 +14,9 @@ export const Header = () => {
     return (
         <HeaderWrapper>
             <HoursWrapper>
-                <Text>Ми працюємо: Понеділок - Пʼятниця з 8:00 до 19:00</Text>
+                <Container>
+                    <Text>Ми працюємо: Понеділок - Пʼятниця з 8:00 до 19:00</Text>
+                </Container>
             </HoursWrapper>
             <TriColorLine />
             <Container>

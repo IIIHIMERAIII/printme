@@ -13,6 +13,14 @@ z-index: 2;
 height: 65px;
 background: ${colors.primaryGray};
 border-radius: 30px;
+
+&.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  border-radius: 0;
+}
 `; 
 
 export const NavList = styled.ul`

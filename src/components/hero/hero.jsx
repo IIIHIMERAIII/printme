@@ -5,9 +5,11 @@ import {
     HeroTitle,
     HeroSlider,
     SliderImg,
-    SliderBtn
+    SliderBtn,
+    SliderBtnSvg,
 } from "./styled"
 import { Button } from "../button/button"
+import sprite from '../../images/sprite.svg';
 
 import h1 from '../../images/h1.jpg';
 import h2 from '../../images/h2.jpg';
@@ -33,16 +35,31 @@ export const Hero = () => {
     return (
         <Background>
             <HeroWrapper>
-                <HeroTitle>{currentSliderItem.title}</HeroTitle>
+                <HeroTitle >{currentSliderItem.title}</HeroTitle>
                 <Button
                     text='Дізнатись більше'
                 />
             </HeroWrapper>
             <HeroSlider>
-                <SliderImg src={currentSliderItem.img} alt="Slider Image" />
+                 {sliderItems.map((item, index) => (
+    <SliderImg
+      key={index}
+      src={item.img}
+      alt="Slider Image"
+      className={index === currentImageIndex ? "image-enter" : "image-exit"}
+    />
+  ))}
             </HeroSlider>
-                <SliderBtn onClick={previousImage} style={{left: '3px'}}>{`<`}</SliderBtn>
-            <SliderBtn onClick={nextImage} style={{ right: '3px' }}>{`>`}</SliderBtn>
+            <SliderBtn onClick={previousImage} style={{ left: '5px' }} > 
+                <SliderBtnSvg>
+                    <use use href={`${sprite}#circle_left`}/>
+                </SliderBtnSvg>
+            </SliderBtn>
+            <SliderBtn onClick={nextImage} style={{ right: '5px' }}>
+                <SliderBtnSvg>
+                    <use use href={`${sprite}#circle_right`}/>
+                </SliderBtnSvg>
+            </SliderBtn>
         </Background>
     )
 };
