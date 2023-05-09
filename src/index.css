@@ -56,8 +56,8 @@ a {
 .simplebar-scrollbar::before {
   margin-left: 2px;
   background-color: transparent;
-  border: 2px solid orange;
-  background-color: orange;
+  border: 2px solid #f5821f;
+  background-color: #f5821f;
   width: 30px;
   height: 30px;
   border-radius: 50%;
