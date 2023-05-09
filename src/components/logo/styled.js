@@ -7,7 +7,7 @@ align-items: center;
 `;
 
 export const LogoIcon = styled.img`
-width: 210px;
-height: 150px;
+width: 200px;
+height: 130px;
 cursor: pointer;
 `;

@@ -36,6 +36,15 @@ color: ${colors.primaryWhite};
 `;
 
 export const NavLink = styled(Link)`
-padding: 20px;
+padding: 17px;
 color: ${colors.primaryWhite};
+transition: color 0.3s ease, border-bottom-color 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${colors.orange};
+    border-bottom: 5px solid ${colors.orange}; 
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  }
 `;

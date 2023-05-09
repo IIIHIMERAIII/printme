@@ -3,9 +3,6 @@ import {
     ServicesTitle,
     FlexContainer,
     CategoryWrapper,
-    MainImg,
-    MainImgWrapper,
-    MaingTitle,
     CategoryList,
     ListItem,
     ItemImg,
@@ -22,7 +19,11 @@ const servicesItems = [
     { img: s2, title: 'Зовнішня реклама' },
     { img: s3, title: 'Брендування авто' },
     { img: s4, title: 'Виставкові стенди' },
-    { img: s5, title: `Інтер'єрна реклама` }
+    { img: s5, title: `Інтер'єрна реклама` },
+    { img: s2, title: `Хтось десь` },
+    { img: s4, title: `Десь хтось` },
+    { img: s1, title: `Десь хтось` },
+    { img: s3, title: `Десь хтось` },
 ];
 
 export const Services = () => {
@@ -31,10 +32,6 @@ export const Services = () => {
             <Container style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
                 <ServicesTitle>Наші послуги</ServicesTitle>
             <FlexContainer>
-                <MainImgWrapper>
-                    <MainImg src={s1} />
-                    <MaingTitle>Подивитись усі послуги</MaingTitle>
-                </MainImgWrapper>
                 <CategoryWrapper>
                     <CategoryList>
                         {servicesItems.map((item, index) => (

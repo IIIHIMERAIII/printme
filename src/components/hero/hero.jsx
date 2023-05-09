@@ -15,8 +15,8 @@ import h1 from '../../images/h1.jpg';
 import h2 from '../../images/h2.jpg';
 
 const sliderItems = [
-    { img: h1, title: 'Якась крута фраза номер 1 ' },
-    { img: h2, title: 'Якась крута фраза номер 2 ' }
+    { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' },
+    { img: h2, title: 'Вигтовлення технічної документації на вивіску', link: '/products'  }
 ];
 
 export const Hero = () => {
@@ -38,6 +38,7 @@ export const Hero = () => {
                 <HeroTitle >{currentSliderItem.title}</HeroTitle>
                 <Button
                     text='Дізнатись більше'
+                    link={currentSliderItem.link}
                 />
             </HeroWrapper>
             <HeroSlider>

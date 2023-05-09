@@ -31,10 +31,10 @@ const productsItems = [
     'Герби та фірмова символіка',
     'Зовнішня реклама',
     'Оформлення композитом',
-    'Створення логотипів',
+    'Вигтовлення технічної документації',
     'Сувенірна продукція та поліграфія',
 ];
-const contactsItems = ['+380504049636', '+380684049636', 'mailto:exgrafika17@gmail.com'];
+const contactsItems = ['+380504049636', '+380684049636', 'exgrafika17@gmail.com'];
 
 export const Footer = () => {
     return (
@@ -46,7 +46,7 @@ export const Footer = () => {
                         <VisitUsTitle>Завітайте до нас</VisitUsTitle>
                         <InfoList>
                             <InfoListItem>
-                                <InfoText>Місто Полтава <br /> вул. Пушкіна, 53, оф. 11 </InfoText>
+                                <InfoText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </InfoText>
                             </InfoListItem>
                             <InfoListItem>
                                 <InfoText>Будні дні: 8:00 - 19:00 <br /> Вихідні: 10:00 - 15:00</InfoText>

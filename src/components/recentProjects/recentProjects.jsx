@@ -23,7 +23,7 @@ export const RecentProjects = () => {
 
 
     return (
-        <ProjectsWrapper style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingBottom: '80px' }} >
+        <ProjectsWrapper style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingBottom: '120px' }} >
             <ProjectsTitle>Наші роботи</ProjectsTitle>
             <ProjectsSybTitle>Завдяки вам ми завжди в пошуках натхнення</ProjectsSybTitle>
             <GalleryWrapper>

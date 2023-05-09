@@ -51,11 +51,13 @@ height: 580px;
 export const HeroWrapper = styled.div`
 margin-left: 174px;
 width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 `;
 
 export const HeroTitle = styled.h1`
-margin-bottom: 80px;    
-font-size: 50px;
+font-size: 45px;
 color: ${colors.primaryWhite};
 `;
 
