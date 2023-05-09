@@ -13,6 +13,7 @@ z-index: 2;
 height: 65px;
 background: ${colors.primaryGray};
 border-radius: 30px;
+justify-content: center;
 
 &.sticky {
   position: fixed;
@@ -20,11 +21,14 @@ border-radius: 30px;
   width: 100vw;
   left: 0;
   border-radius: 0;
+
 }
 `; 
 
 export const NavList = styled.ul`
 display: flex;
+width: 100%;
+justify-content: space-around;
 `;
 
 export const NavListItem = styled.li`

@@ -2,6 +2,15 @@ import React, { useEffect } from 'react';
 import { NavWrapper, NavList, NavListItem, NavLink } from "./styled"
 import { Container } from "../../assets/container"
 
+const navItems = [
+  { redirect: '/', title: 'Головна' },
+  { redirect: '/products', title: 'Продукція' },
+  { redirect: '/products', title: 'Клієнти' },
+  { redirect: '/products', title: 'Фотогалерея' },
+  { redirect: '/products', title: 'Контакти' },
+  
+];
+
 export const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -28,12 +37,11 @@ export const NavBar = () => {
         <Container>
             <NavWrapper id="nav">
                 <NavList>
-                    <NavListItem><NavLink to='/'>Головна</NavLink></NavListItem>
-                    <NavListItem><NavLink to='/products'>Продукція</NavLink></NavListItem>
-                    <NavListItem><NavLink>Клієнти</NavLink></NavListItem>
-                    <NavListItem><NavLink>Фотогалерея</NavLink></NavListItem>
-                    <NavListItem><NavLink>Про нас</NavLink></NavListItem>
-                    <NavListItem><NavLink>Контакти</NavLink></NavListItem>
+                  {navItems.map((item, index) => (
+                    <NavListItem key={index}>
+                      <NavLink to={item.redirect}>{item.title}</NavLink>
+                    </NavListItem>
+                    ))}
                 </NavList>
             </NavWrapper>
         </Container>
