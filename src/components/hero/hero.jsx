@@ -13,6 +13,7 @@ import sprite from '../../images/sprite.svg';
 
 import h1 from '../../images/h1.jpg';
 import h2 from '../../images/h2.jpg';
+import { Container } from '../../assets/container';
 
 const sliderItems = [
     { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' },
@@ -43,13 +44,13 @@ export const Hero = () => {
             </HeroWrapper>
             <HeroSlider>
                  {sliderItems.map((item, index) => (
-    <SliderImg
-      key={index}
-      src={item.img}
-      alt="Slider Image"
-      className={index === currentImageIndex ? "image-enter" : "image-exit"}
-    />
-  ))}
+                    <SliderImg
+                      key={index}
+                      src={item.img}
+                      alt="Slider Image"
+                      className={index === currentImageIndex ? "image-enter" : "image-exit"}
+                    />
+                 ))}
             </HeroSlider>
             <SliderBtn onClick={previousImage} style={{ left: '5px' }} > 
                 <SliderBtnSvg>
