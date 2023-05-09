@@ -47,14 +47,19 @@ a {
 }
 
 .simplebar-track.simplebar-vertical {
-  width: 50px;
+  width: 40px;
+  border: 2px solid orange;
+  border-radius: 25px;
+  padding-top: 20px;
 }
 
 .simplebar-scrollbar::before {
-  margin-left: 10px;
-  background-color: #f5821f;
-  width: 35px;
-  height: 35px;
+  margin-left: 2px;
+  background-color: transparent;
+  border: 2px solid orange;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   opacity: 1;
   cursor: pointer;

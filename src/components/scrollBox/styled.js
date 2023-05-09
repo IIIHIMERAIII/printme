@@ -3,7 +3,6 @@ import Scrollbars from 'simplebar-react';
 
 export const ScrollBar = styled(Scrollbars)`
 margin-left: auto;
-margin-right: 20px;
 width:610px;
 cursor: default;
 `;
