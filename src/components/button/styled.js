@@ -20,7 +20,7 @@ export const Btn = styled.button`
   border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
-
+  
   &:before {
     content: '';
     background: ${vars.BtnGradientAnimate};

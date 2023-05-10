@@ -4,7 +4,6 @@ import print from '../../images/print.jpg'
 export const AdvantagesWrapper = styled.section`
 padding-top: 120px;
 background-image: url(${print});
-background-size: cover;
 background-position: center;
 `;
 

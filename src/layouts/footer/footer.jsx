@@ -1,29 +1,30 @@
 import {
     FooterWrapper,
-    VisitUsWrapper,
-    VisitUsTitle,
-    InfoList,
-    InfoListItem,
-    InfoText,
-    NavWrapper,
-    ListsWrapper,
-    NavTitle,
-    NavList,
-    NavListItem,
-    NavLink,
-    ContactsTitle,
-    ContactsWrapper,
     ContactsList,
     ContactsListItem,
     ContactsLink,
     SubFooter,
+    SocialList,
+    SocialSvg,
+    SocialWrapper,
+    RightsWrapper,
+    Logo,
+    RightsTitle,
+    SectionWrapper,
+    SectionList,
+    SectionTitle,
+    SectionListItem,
+    SectionText,
+    SectionLink,
 } from "./styled"
 import {Container} from '../../assets/container'
 import { TriColorLine } from "../header/styled"
-
+import { colors } from "../../assets/theme";
+import sprite from '../../images/sprite.svg';
+import logo from '../../images/logo.png'
 
 const navItems = ['Головна', 'Продукція', 'Клієнти', 'Фотогалерея', 'Про нас', 'Контакти'];
-const productsItems = [
+const servicesItems = [
     `Інтер'єрна реклама`,
     'Брендування авто',
     'Виготовлення печаток',
@@ -41,50 +42,65 @@ export const Footer = () => {
         <>
             <FooterWrapper>
                 <TriColorLine />
-                <Container style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '60px', paddingTop: '60px'}}>
-                    <VisitUsWrapper>
-                        <VisitUsTitle>Завітайте до нас</VisitUsTitle>
-                        <InfoList>
-                            <InfoListItem>
-                                <InfoText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </InfoText>
-                            </InfoListItem>
-                            <InfoListItem>
-                                <InfoText>Будні дні: 8:00 - 19:00 <br /> Вихідні: 10:00 - 15:00</InfoText>
-                            </InfoListItem>
-                        </InfoList>
-                    </VisitUsWrapper>
-                    <NavWrapper>
-                        <NavTitle>Навігація</NavTitle>
-                        <ListsWrapper>
-                            <NavList>
+                <Container style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '60px', paddingTop: '60px', alignItems: 'center'}}>
+                    <SectionWrapper>
+                        <SectionList>
+                            <SectionTitle style={{borderBottom: `2px solid ${colors.blue}`}}>Завітайте до нас</SectionTitle>
+                            <SectionListItem>
+                                <SectionText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </SectionText>
+                            </SectionListItem>
+                            <SectionListItem style={{marginTop: '50px'}}>
+                                <SectionText>Будні дні: 8:00 - 19:00 <br /> Вихідні: 10:00 - 15:00</SectionText>
+                            </SectionListItem>
+                        </SectionList>
+                    </SectionWrapper>
+                    <SectionWrapper>
+                        <SectionList>
+                            <SectionTitle style={{borderBottom: `2px solid ${colors.pink}`}}>Послуги</SectionTitle>
+                            {servicesItems.map((item, index) => (
+                               <SectionListItem key={index}>
+                                     <SectionLink>{item}</SectionLink>
+                               </SectionListItem>
+                               ))}
+                        </SectionList>
+                    </SectionWrapper>
+                    <SectionWrapper>
+                            <SectionList>
+                            <SectionTitle style={{borderBottom: `2px solid ${colors.orange}`}}>Навігація</SectionTitle>
                              {navItems.map((item, index) => (
-                               <NavListItem key={index}>
-                                     <NavLink>{item}</NavLink>
-                               </NavListItem>
+                               <SectionListItem key={index}>
+                                     <SectionLink>{item}</SectionLink>
+                               </SectionListItem>
                                ))}
-                            </NavList>
-                            <NavList>
-                             {productsItems.map((item, index) => (
-                               <NavListItem key={index}>
-                                     <NavLink>{item}</NavLink>
-                               </NavListItem>
-                               ))}
-                            </NavList>
-                        </ListsWrapper>
-                    </NavWrapper>
-                    <ContactsWrapper>
-                        <ContactsTitle>Контакти</ContactsTitle>
-                        <ContactsList>
+                            </SectionList>
+                    </SectionWrapper>
+                </Container>
+                <SubFooter>
+                    <Container>
+                        <SocialWrapper>
+                            <SocialList>
+                                <SocialSvg>
+                                    <use  href={`${sprite}#facebook`}/>
+                                </SocialSvg>
+                                <SocialSvg>
+                                    <use  href={`${sprite}#instagram`}/>
+                                </SocialSvg>
+                            </SocialList>
+                            <RightsWrapper>
+                                <Logo
+                                    src={logo}
+                                />
+                                <RightsTitle>Copyright all rights reserved Exgrafika®</RightsTitle>
+                            </RightsWrapper> 
+                            <ContactsList>
                         {contactsItems.map((item, index) => (
                             <ContactsListItem key={index}>
                                   <ContactsLink>{item}</ContactsLink>
                             </ContactsListItem>
                         ))}
                         </ContactsList>
-                    </ContactsWrapper>
-                </Container>
-                <SubFooter>
-
+                        </SocialWrapper>
+                    </Container>
                 </SubFooter>
             </FooterWrapper>
         </>

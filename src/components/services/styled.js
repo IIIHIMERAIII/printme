@@ -1,4 +1,6 @@
+
 import styled from "styled-components";
+import { colors, vars } from "../../assets/theme";
 
 
 export const ServicesWrapper = styled.section`
@@ -21,7 +23,7 @@ display: flex;
 
 export const CategoryList = styled.ul`
 display: flex;
-gap: 25px;
+gap: 30px;
 flex-wrap: wrap;
 `;
 
@@ -31,7 +33,14 @@ width: 270px;
 border-radius: 16px;
 display: flex;
 flex-direction: column;
-box-shadow: -13px 41px 50px -4px rgba(0,0,0,0.3);
+box-shadow: ${vars.TriLineShadow};
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+
+&:hover,
+&:focus {
+    transform: scale(1.1);
+}
 `;
 
 export const ItemImg = styled.img`
@@ -43,11 +52,17 @@ height: 100%;
 export const ItemTitle = styled.p`
 padding: 21px;
 font-size: 20px;
-background: rgba(128, 127, 127, 0.53);
+background: ${colors.primaryGray};
+color: ${colors.primaryWhite};
 border-bottom-right-radius: 16px;
 border-bottom-left-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(3.4px);
-vertical-align: middle;
+text-align: center;
 -webkit-backdrop-filter: blur(3.4px);
+transition: color ${vars.ColorTransition};
+
+${ListItem}:hover & {
+    color: orange;
+  }
 `;

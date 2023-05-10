@@ -26,26 +26,26 @@ const servicesItems = [
     { img: s3, title: `Десь хтось` },
 ];
 
-export const Services = () => {
+export const Services = () => {  
     return (
         <ServicesWrapper>
-            <Container style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+            <Container style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                 <ServicesTitle>Наші послуги</ServicesTitle>
-            <FlexContainer>
-                <CategoryWrapper>
-                    <CategoryList>
-                        {servicesItems.map((item, index) => (
-                        <ListItem key={index}>
-                            <ItemImg
-                                src={item.img}
-                            />
-                                <ItemTitle>{item.title}</ItemTitle>
-                        </ListItem>
-                        ))}
-                    </CategoryList>
-                </CategoryWrapper>
-            </FlexContainer>
+                <FlexContainer>
+                    <CategoryWrapper>
+                        <CategoryList>
+                            {servicesItems.map((item, index) => (
+                                <ListItem key={index}>
+                                    <ItemImg
+                                        src={item.img}
+                                    />
+                                    <ItemTitle>{item.title}</ItemTitle>
+                                </ListItem>
+                            ))}
+                        </CategoryList>
+                    </CategoryWrapper>
+                </FlexContainer>
             </Container>
         </ServicesWrapper>
     )
-}
+};

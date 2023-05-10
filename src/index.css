@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+*:focus {
+  outline: none;
+}
+
 /* Advantages ScrollBar */
 
 .simplebar-wrapper {
@@ -47,7 +51,7 @@ a {
 }
 
 .simplebar-track.simplebar-vertical {
-  width: 40px;
+  width: 41px;
   border: 2px solid orange;
   border-radius: 25px;
   padding-top: 20px;
@@ -176,3 +180,4 @@ a {
 .custom_btn span:hover:after {
   width: 100%;
 }
+

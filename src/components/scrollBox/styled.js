@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Scrollbars from 'simplebar-react';
+import { colors } from "../../assets/theme";
 
 export const ScrollBar = styled(Scrollbars)`
 margin-left: auto;
-width:720px;
+width:690px;
 cursor: default;
+background: ${colors.primaryWhite};
 `;
 
 export const ScrollBarList = styled.ul`
@@ -27,10 +29,12 @@ margin-top: 80px;
 export const ItemIcon = styled.svg`
 width: 140px;
 height: 90px;
+fill: ${colors.orange}
 `;
 
 export const ItemTitle = styled.p`
 font-size: 20px;
+width: 140px;
 `;
 
 export const ItemText = styled.p`

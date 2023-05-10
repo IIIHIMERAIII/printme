@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors} from "../../assets/theme";
+import { colors, vars} from "../../assets/theme";
 import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
@@ -38,13 +38,13 @@ color: ${colors.primaryWhite};
 export const NavLink = styled(Link)`
 padding: 17px;
 color: ${colors.primaryWhite};
-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+transition: ${vars.ColorTransition}, border-bottom-color 0.3s ease;
 
   &:hover,
   &:focus,
   &:active {
     color: ${colors.orange};
     border-bottom: 5px solid ${colors.orange}; 
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    transition: ${vars.ColorTransition}, border-bottom-color 0.3s ease;
   }
 `;
