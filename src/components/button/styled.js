@@ -38,11 +38,11 @@ export const Btn = styled.button`
     border-radius: 10px;
   }
 
-  &:active {
+  &:hover {
     color: ${colors.primartBlack};
   }
 
-  &:active:after {
+  &:hover:after {
     background: transparent;
   }
 

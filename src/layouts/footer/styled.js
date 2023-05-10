@@ -47,7 +47,9 @@ transition: ${vars.ColorTransition};
 
 
 export const ContactsList = styled.ul`
-
+display: flex;
+flex-direction: column;
+gap: 5px;
 `;
 
 export const ContactsListItem = styled.li`
@@ -67,7 +69,7 @@ background: ${colors.subGray};
 `;
 
 export const SocialWrapper = styled.div`
-width: 1200px;
+width: 1170px;
 display: flex;
 justify-content: space-between;
 align-items: center;

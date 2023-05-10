@@ -59,7 +59,6 @@ transition: transform 0.3s ease-in-out;
 `;
 
 export const HoverWrapper = styled.div`
-    z-index: 2;
     opacity: 0;
     display:none;
     text-align: center;
@@ -76,7 +75,7 @@ export const HoverWrapper = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
+        opacity:1;
   }
 `;
 
@@ -85,13 +84,15 @@ export const HoverTitle = styled.p`
 font-size: 50px;
 margin-bottom: 30px;
 font-weight: 600;
-color: ${colors.orange}
+color: ${colors.orange};
+opacity: inherit;
 `;
 
 export const HoverBtn = styled.button`
 cursor: pointer;
 background: transparent;
 border:none;
+opacity: inherit;
 
 &:hover{
     fill: ${colors.orange};

@@ -19,3 +19,8 @@ export const vars = {
     ColorTransition: '0.3s ease',
 };
 
+export const breackPoints = {
+    md: '768px',
+    xl: '1200px',
+    xxl: '1400px',
+};
