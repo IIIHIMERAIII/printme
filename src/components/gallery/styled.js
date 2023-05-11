@@ -36,7 +36,6 @@ width: 22%;
 `;
 
 export const NeonWrapper = styled.div`
-max-height: 340px;
 width: 100%;
 margin-bottom: 10px;
 border-radius: 16px;
