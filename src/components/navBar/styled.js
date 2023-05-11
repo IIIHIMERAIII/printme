@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { colors, vars} from "../../assets/theme";
-import { Link } from "react-router-dom";
-
+import { NavLink as Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
 z-index: 3;
@@ -41,6 +40,16 @@ color: ${colors.primaryWhite};
 export const NavLink = styled(Link)`
 padding: 17px;
 color: ${colors.primaryWhite};
-transition: ${vars.ColorTransition}, border-bottom-color 0.3s ease;
+box-shadow: inset 0 0 0 0 ${colors.orange};
+padding: 8px 0.5rem;;
+margin: 0 -0.5rem;
+transition: all 0.8s ease-in-out, box-shadow .3s ease-in-out;
+border-radius: 0px 8px 8px 0px;
 
+&:hover,
+&.active {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 ${colors.orange};
+  transition-duration: 0.8s;
+}
 `;

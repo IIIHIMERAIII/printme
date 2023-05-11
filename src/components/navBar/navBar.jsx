@@ -5,8 +5,8 @@ import { Container } from "../../assets/container"
 const navItems = [
   { redirect: '/', title: 'Головна' },
   { redirect: '/products', title: 'Продукція' },
-  { redirect: '/products', title: 'Фотогалерея' },
-  { redirect: '/products', title: 'Контакти' },
+  { redirect: '/gallery', title: 'Фотогалерея' },
+  { redirect: '/contacts', title: 'Контакти' },
   
 ];
 
