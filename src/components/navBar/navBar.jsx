@@ -6,7 +6,7 @@ const navItems = [
   { redirect: '/', title: 'Головна' },
   { redirect: '/products', title: 'Продукція' },
   { redirect: '/gallery', title: 'Фотогалерея' },
-  { redirect: '/contacts', title: 'Контакти' },
+  { redirect: '/about', title: 'Контакти' },
   
 ];
 

@@ -1,4 +1,3 @@
-
 import styled, {keyframes} from "styled-components";
 import { colors, vars } from "../../assets/theme";
 
@@ -9,12 +8,12 @@ const glowingAnimation = keyframes`
 `;
 
 
-export const ServicesWrapper = styled.section`
+export const GalleryWrapper = styled.section`
 padding-top: 80px;
 padding-bottom: 80px;
 `;
 
-export const ServicesTitle = styled.h3`
+export const GalleryTitle = styled.h3`
 font-size: 50px;
 text-align: center;
 margin-bottom: 50px;
@@ -32,8 +31,13 @@ justify-content: space-between;
 `;
 
 export const ListItem = styled.li`
-max-height: 340px;
+position: relative;
 width: 22%;
+`;
+
+export const NeonWrapper = styled.div`
+max-height: 340px;
+width: 100%;
 margin-bottom: 10px;
 border-radius: 16px;
 display: flex;
@@ -68,7 +72,8 @@ transition: all 0.5s ease-in-out;
     transition: opacity 1.5s ease-in-out;
     border-radius: 10px;
   }
-`;
+
+`
 
 export const ItemImg = styled.img`
 border-radius: 16px 16px 0px 0px;
