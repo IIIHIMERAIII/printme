@@ -19,7 +19,7 @@ const itemGrowUp = keyframes`
 
 export const MainImg = styled.img`
 height: 330px;
-width: 630px;
+width: 100%;
 margin-bottom: 20px;
 transition: opacity ${(props) => props.transitionDuration}ms ease-in-out;
 

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import Scrollbars from 'simplebar-react';
 import { colors } from "../../assets/theme";
 
+
 export const ScrollBar = styled(Scrollbars)`
 margin-left: auto;
-width:690px;
+width:60%;
 cursor: default;
 background: ${colors.primaryWhite};
 `;
@@ -20,24 +21,38 @@ padding: 5px;
 display: flex;
 align-items: center;
 margin-top: 80px;
+width: 100%;
 
 &:last-child {
-    margin-bottom: 80px; /* Add the desired margin-bottom value */
+    margin-bottom: 80px; 
   }
 `;
 
-export const ItemIcon = styled.svg`
-width: 140px;
-height: 90px;
-fill: ${colors.orange}
+
+export const ItemTetxWrapper = styled.div`
+align-items: center;
+justify-content: center;
+display: flex;
+width: 100%;
+gap: 20px;
+
+&:before{
+  content: '';
+  background-image: url(${props => props.icon});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 23%;
+  height: 134px;
+}
 `;
 
 export const ItemTitle = styled.p`
-font-size: 20px;
-width: 140px;
+font-size: 22px;
+width: 20%; 
 `;
 
 export const ItemText = styled.p`
-font-size: 16px;
-width: 400px;
+font-size: 18px;
+width: 100%;
 `;

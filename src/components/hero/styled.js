@@ -50,7 +50,7 @@ height: 580px;
 
 export const HeroWrapper = styled.div`
 margin-left: 174px;
-width: 500px;
+width: 35%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;

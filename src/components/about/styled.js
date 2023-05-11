@@ -3,6 +3,6 @@ import { colors } from "../../assets/theme";
 
 export const AboutWrapper = styled.section`
 background: ${colors.primaryWhite};
-padding-top: 160px;
+padding-top: 80px;
 padding-bottom: 120px;
 `;

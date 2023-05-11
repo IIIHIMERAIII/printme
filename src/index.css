@@ -181,3 +181,110 @@ a {
   width: 100%;
 }
 
+/* main btn */
+
+
+.button-container {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 220px;
+  height: 90px;
+  overflow: hidden;
+  background-color: #f5821f;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.button-container .button {
+  width: 101%;
+  height: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.button-container .button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.mas {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.button {
+  width: 101%;
+  height: 100%;
+  font-size: 20px;
+  mask: url("/src/images/btn_mask.png");
+  mask-size: 3000% 100%;
+  background-color: #000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}

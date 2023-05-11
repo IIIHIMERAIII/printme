@@ -31,14 +31,14 @@ export const NavBar = () => {
     };
   }, []);
 
-    
+
     return (
-        <Container>
+        <Container style={{height: '65px'}}>
             <NavWrapper id="nav">
                 <NavList>
                   {navItems.map((item, index) => (
                     <NavListItem key={index}>
-                      <NavLink to={item.redirect}>{item.title}</NavLink>
+                          <NavLink to={item.redirect}>{item.title}</NavLink>
                     </NavListItem>
                     ))}
                 </NavList>

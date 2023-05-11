@@ -15,17 +15,17 @@ export const Header = () => {
         <HeaderWrapper>
             <HoursWrapper>
                 <Container>
-                    <Text>Ми працюємо: Понеділок - Пʼятниця з 8:00 до 19:00</Text>
+                    <Text>Ми працюємо: Понеділок - Пʼятниця з 9:00 до 17:00</Text>
                 </Container>
             </HoursWrapper>
             <TriColorLine />
             <Container>
                 <ContactsWrapper>
                     <Logo />
-                    <Contacts/>
+                    <Contacts />
                 </ContactsWrapper>
             </Container>
             <NavBar/>
         </HeaderWrapper>
     )
-}
+};

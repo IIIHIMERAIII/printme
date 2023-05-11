@@ -50,7 +50,7 @@ export const Footer = () => {
                                 <SectionText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </SectionText>
                             </SectionListItem>
                             <SectionListItem style={{marginTop: '50px'}}>
-                                <SectionText>Будні дні: 8:00 - 19:00 <br /> Вихідні: 10:00 - 15:00</SectionText>
+                                <SectionText>Будні дні: 8:00 - 17:00 <br /> Вихідні: Cуббота, Неділя</SectionText>
                             </SectionListItem>
                         </SectionList>
                     </SectionWrapper>

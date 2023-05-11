@@ -1,5 +1,5 @@
-import { Btn } from "./styled";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Button = ({text, link}) => {
   const navigate = useNavigate();
@@ -18,7 +18,10 @@ export const Button = ({text, link}) => {
 
     return (
         <>
-            <Btn onClick={handleClick}>{text}</Btn>
+        <div className="button-container" >
+          <span className="mas">{text}</span>
+          <Link className="button" onClick={handleClick}><p>{text}</p></Link>
+        </div>
         </>
     )
 }

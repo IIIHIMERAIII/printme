@@ -42,13 +42,13 @@ transition: all 0.8s ease-in-out;
     transform: translate(-50%, -50%);
     width: 101%;
     height: 101%;
-    background: ${colors.primaryWhite};
+    background: ${colors.orange};
     transition: all 0.8s ease-in-out;
     opacity: 0;
 }
 
     &:hover::before {
-        opacity: 1;
+        opacity: 0.8;
     }
 
 `;
@@ -84,18 +84,21 @@ export const HoverTitle = styled.p`
 font-size: 50px;
 margin-bottom: 30px;
 font-weight: 600;
-color: ${colors.orange};
+color: ${colors.primaryWhite};
 opacity: inherit;
 `;
 
 export const HoverBtn = styled.button`
 cursor: pointer;
 background: transparent;
+fill: ${colors.primaryBlack};
 border:none;
 opacity: inherit;
+transition: all 0.5s ease;
 
 &:hover{
-    fill: ${colors.orange};
+    fill: ${colors.primaryWhite};
+    transform: scale(1.1);
 }
 `;
 

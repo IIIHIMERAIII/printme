@@ -1,20 +1,23 @@
 
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { colors, vars } from "../../assets/theme";
+
+const glowingAnimation = keyframes`
+  0% { background-position: 0 0; }
+  50% { background-position: 640% 0; }
+  100% { background-position: 0 0; }
+`;
 
 
 export const ServicesWrapper = styled.section`
 padding-top: 80px;
+padding-bottom: 80px;
 `;
 
 export const ServicesTitle = styled.h3`
 font-size: 50px;
 text-align: center;
 margin-bottom: 50px;
-`;
-
-export const FlexContainer = styled.div`
-display: flex;
 `;
 
 export const CategoryWrapper = styled.div`
@@ -25,28 +28,53 @@ export const CategoryList = styled.ul`
 display: flex;
 gap: 30px;
 flex-wrap: wrap;
+justify-content: space-between;
 `;
 
 export const ListItem = styled.li`
-height: 346px;
-width: 270px;
+max-height: 340px;
+width: 22%;
+margin-bottom: 10px;
 border-radius: 16px;
 display: flex;
 flex-direction: column;
 box-shadow: ${vars.TriLineShadow};
 cursor: pointer;
-transition: transform 0.3s ease-in-out;
+transition: all 0.5s ease-in-out;
 
 &:hover,
 &:focus {
     transform: scale(1.1);
+    box-shadow: none;
 }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:before {
+    content: '';
+    background: ${vars.BtnGradientAnimate};
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 640%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: ${glowingAnimation} 30s linear infinite;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    border-radius: 10px;
+  }
 `;
 
 export const ItemImg = styled.img`
 border-radius: 16px 16px 0px 0px;
 display:inline-block;
 height: 100%;
+width: 100%;
 `;
 
 export const ItemTitle = styled.p`

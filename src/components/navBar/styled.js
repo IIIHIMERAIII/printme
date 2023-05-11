@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { colors, vars} from "../../assets/theme";
 import { Link } from "react-router-dom";
 
+
 export const NavWrapper = styled.nav`
+z-index: 3;
 padding-right: 20px;
 padding-left: 20px;
 position: relative;
@@ -17,11 +19,11 @@ justify-content: center;
 
 &.sticky {
   position: fixed;
-  top: 0;
-  width: 100vw;
-  left: 0;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1600px;
   border-radius: 0;
-
 }
 `; 
 
@@ -33,6 +35,7 @@ justify-content: space-around;
 
 export const NavListItem = styled.li`
 color: ${colors.primaryWhite};
+
 `;
 
 export const NavLink = styled(Link)`
@@ -40,11 +43,4 @@ padding: 17px;
 color: ${colors.primaryWhite};
 transition: ${vars.ColorTransition}, border-bottom-color 0.3s ease;
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: ${colors.orange};
-    border-bottom: 5px solid ${colors.orange}; 
-    transition: ${vars.ColorTransition}, border-bottom-color 0.3s ease;
-  }
 `;

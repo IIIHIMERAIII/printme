@@ -3,6 +3,7 @@ import print from '../../images/print.jpg'
 
 export const AdvantagesWrapper = styled.section`
 padding-top: 120px;
+padding-bottom: 80px;
 background-image: url(${print});
 background-position: center;
 `;

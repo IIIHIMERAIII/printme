@@ -17,7 +17,7 @@ gap: 40px;
 
 export const ContactsItem = styled.li`
 font-size: 20px;
-color: ${colors.primartBlack};
+color: ${colors.primaryBlack};
 height: 40px;
 
   &:first-child::after {

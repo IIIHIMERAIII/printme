@@ -1,7 +1,6 @@
 import {
     ServicesWrapper,
     ServicesTitle,
-    FlexContainer,
     CategoryWrapper,
     CategoryList,
     ListItem,
@@ -31,7 +30,6 @@ export const Services = () => {
         <ServicesWrapper>
             <Container style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                 <ServicesTitle>Наші послуги</ServicesTitle>
-                <FlexContainer>
                     <CategoryWrapper>
                         <CategoryList>
                             {servicesItems.map((item, index) => (
@@ -44,7 +42,6 @@ export const Services = () => {
                             ))}
                         </CategoryList>
                     </CategoryWrapper>
-                </FlexContainer>
             </Container>
         </ServicesWrapper>
     )
