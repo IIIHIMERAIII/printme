@@ -1,5 +1,6 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
 @import '../node_modules/simplebar-react/dist/simplebar.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
 :root {
   --primary: #c31432;
@@ -9,9 +10,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Alice', serif;
+  /* Replace with imported font name */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

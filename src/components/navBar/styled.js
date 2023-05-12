@@ -45,6 +45,8 @@ padding: 8px 0.5rem;;
 margin: 0 -0.5rem;
 transition: all 0.8s ease-in-out, box-shadow .3s ease-in-out;
 border-radius: 8px;
+font-size: 20px;
+font-weight: 600;
 
 &:hover,
 &.active {
