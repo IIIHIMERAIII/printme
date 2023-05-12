@@ -44,7 +44,7 @@ box-shadow: inset 0 0 0 0 ${colors.orange};
 padding: 8px 0.5rem;;
 margin: 0 -0.5rem;
 transition: all 0.8s ease-in-out, box-shadow .3s ease-in-out;
-border-radius: 0px 8px 8px 0px;
+border-radius: 8px;
 
 &:hover,
 &.active {

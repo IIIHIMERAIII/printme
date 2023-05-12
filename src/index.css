@@ -1,6 +1,11 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
 @import '../node_modules/simplebar-react/dist/simplebar.min.css';
 
+:root {
+  --primary: #c31432;
+  --secondary: #240b36;
+  --gradient: linear-gradient(to right, #c31432, #240b36);
+}
 
 body {
   margin: 0;
@@ -288,3 +293,6 @@ a {
   -webkit-animation: ani 0.7s steps(70) forwards;
   animation: ani 0.7s steps(70) forwards;
 }
+
+
+/* carousel */

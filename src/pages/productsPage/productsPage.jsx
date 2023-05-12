@@ -1,5 +1,4 @@
 import { Gallery } from "../../components/gallery/gallery"
-import { Background } from "./styledProducts";
 
 
 import s1 from '../../images/s1.jpg';
@@ -23,12 +22,10 @@ const productsItems = [
 export const ProductsPage = () => {
     return (
         <>
-        <Background>
         <Gallery
             title='Наша продукція'
             array={productsItems}
         />
-        </Background>
         </>
     )
 }

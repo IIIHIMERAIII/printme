@@ -85,12 +85,13 @@ width: 80px;
 height: 80px;
 cursor: pointer;
 fill: ${colors.primaryWhite};
-transition: fill ${vars.ColorTransition};
+transition: all ${vars.ColorTransition};
 
 &:hover,
 &:focus
 {
     fill: ${colors.orange};
+    transform: scale(1.1);
 }
 `;
 

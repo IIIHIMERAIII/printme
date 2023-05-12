@@ -71,8 +71,7 @@ transition: all 0.5s ease-in-out;
     transition: opacity 1.5s ease-in-out;
     border-radius: 10px;
   }
-
-`
+`;
 
 export const ItemImg = styled.img`
 border-radius: 16px 16px 0px 0px;
