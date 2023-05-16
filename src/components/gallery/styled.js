@@ -1,5 +1,6 @@
-import styled, {keyframes} from "styled-components";
-import { colors, vars } from "../../assets/theme";
+import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
+import { colors, vars, breackPoints } from "../../assets/theme";
 
 const glowingAnimation = keyframes`
   0% { background-position: 0 0; }
@@ -14,9 +15,13 @@ padding-bottom: 80px;
 `;
 
 export const GalleryTitle = styled.h3`
-font-size: 50px;
+font-size: 35px;
 text-align: center;
 margin-bottom: 50px;
+
+@media screen and (min-width: ${breackPoints.md} {
+  font-size: 50px;
+}
 `;
 
 export const CategoryWrapper = styled.div`
@@ -25,14 +30,26 @@ display: flex;
 
 export const CategoryList = styled.ul`
 display: flex;
-gap: 30px;
 flex-wrap: wrap;
+gap: 20px;
 justify-content: space-between;
+
+@media screen and (min-width: ${breackPoints.md} {
+  gap: 30px;
+
+}
+
 `;
 
 export const ListItem = styled.li`
+height: 218px;
 position: relative;
 width: 22%;
+`;
+
+export const ItemLink = styled(Link)`
+height: 100%;
+display: inline-flex;
 `;
 
 export const NeonWrapper = styled.div`
@@ -81,8 +98,8 @@ width: 100%;
 `;
 
 export const ItemTitle = styled.p`
-padding: 21px;
-font-size: 20px;
+padding: 10px;
+font-size: 16px;
 background: ${colors.primaryGray};
 color: ${colors.primaryWhite};
 border-bottom-right-radius: 16px;
@@ -95,5 +112,10 @@ transition: color ${vars.ColorTransition};
 
 ${ListItem}:hover & {
     color: orange;
+  }
+
+  @media screen and (min-width: ${breackPoints.md} {
+    font-size: 20px;
+    padding: 21px;
   }
 `;

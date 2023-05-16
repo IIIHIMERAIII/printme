@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import { colors, vars } from "../../assets/theme";
+import { colors, vars, breackPoints } from "../../assets/theme";
 
 export const HeaderWrapper = styled.header`
-
+display: none;
+@media screen and (min-width: ${breackPoints.md}) {
+    display: inline;
+}
 `;
 
 export const HoursWrapper = styled.div`
@@ -32,4 +35,18 @@ background: ${colors.primaryWhite};
 display: flex;
 justify-content: space-between;
 align-items: center;
+`;
+
+export const upButton = styled.button`
+display: none;
+
+&.sticky {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 95%;
+    bottom: 1%;
+    background: red;
+}
 `;

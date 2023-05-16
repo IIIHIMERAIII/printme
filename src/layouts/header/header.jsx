@@ -12,7 +12,7 @@ import { NavBar } from "../../components/navBar/navBar"
 
 export const Header = () => {
     return (
-        <HeaderWrapper>
+      <HeaderWrapper>
             <HoursWrapper>
                 <Container>
                     <Text>Ми працюємо: Понеділок - Пʼятниця з 9:00 до 17:00</Text>
@@ -25,7 +25,7 @@ export const Header = () => {
                     <Contacts />
                 </ContactsWrapper>
             </Container>
-            <NavBar/>
+            <NavBar />
         </HeaderWrapper>
     )
 };

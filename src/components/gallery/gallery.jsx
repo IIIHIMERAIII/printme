@@ -3,6 +3,7 @@ import {
     GalleryTitle,
     CategoryWrapper,
     CategoryList,
+    ItemLink,
     ListItem,
     NeonWrapper,
     ItemImg,
@@ -22,7 +23,7 @@ export const Gallery = ({title, array}) => {
                         <CategoryList>
                             {array.map((item, index) => (
                                 <ListItem key={index}>
-                                    <Link
+                                    <ItemLink
                                         to={`/product/${item.productId}`}
                                     >
                                     <NeonWrapper>
@@ -31,7 +32,7 @@ export const Gallery = ({title, array}) => {
                                     />
                                     <ItemTitle>{item.title}</ItemTitle>
                                     </NeonWrapper>
-                                    </Link>
+                                    </ItemLink>
                                 </ListItem>
                             ))}
                         </CategoryList>

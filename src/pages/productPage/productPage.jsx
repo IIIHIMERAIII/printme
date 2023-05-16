@@ -7,8 +7,7 @@ import { Container } from "../../assets/container";
 
 export const ProductPage = () => {
     const { id } = useParams();
-    const productId = parseInt(id, 10);
-    const product = servicesItems.find(item => item.productId === productId);
+    let product = servicesItems.find(item => item.productId === id);
     const { pathname } = useLocation();
 
     useEffect(() => {

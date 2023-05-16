@@ -7,12 +7,12 @@ import s4 from '../images/s4.jpg';
 import s5 from '../images/s5.jpg';
 
 export const servicesItems = [
-    {productId: 1, img: s2, title: 'Зовнішня реклама' ,href:'/products'},
-    {productId: 2, img: s3, title: 'Брендування авто' ,href:'/products'},
-    {productId: 3, img: s4, title: 'Виставкові стенди' ,href:'/products'},
-    {productId: 4, img: s5, title: `Інтер'єрна реклама` ,href:'/products'},
-    {productId: 5, img: s2, title: `Хтось десь` , href:'/products'},
-    {productId: 6, img: s4, title: `Десь хтось` , href:'/products'},
-    {productId: 7, img: s1, title: `Десь хтось` , href:'/products'},
-    {productId: 8, img: s3, title: `Десь хтось` , href:'/products'},
+    {productId: 'Зовнішня реклама', img: s2, title: 'Зовнішня реклама' },
+    {productId: 'Брендування авто', img: s3, title: 'Брендування авто' },
+    {productId: 'Виставкові стенди', img: s4, title: 'Виставкові стенди'},
+    {productId: `Інтер'єрна реклама`, img: s5, title: `Інтер'єрна реклама`},
+    {productId: 'Виготовлення печаток та штампів', img: s2, title: `Виготовлення печаток та штампів` },
+    {productId: 'Герби та фірмова символіка', img: s4, title: `Герби та фірмова символіка` },
+    {productId: 'Зовнішня реклама', img: s1, title: `Оформлення композитом` },
+    {productId: 'Сувенірна продукція та поліграфія', img: s3, title: `Сувенірна продукція та поліграфія` },
 ];

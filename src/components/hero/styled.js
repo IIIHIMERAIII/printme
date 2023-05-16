@@ -1,6 +1,5 @@
 import styled, { keyframes} from "styled-components";
-import { colors } from "../../assets/theme";
-import { vars } from "../../assets/theme";
+import { colors, vars, breackPoints } from "../../assets/theme";
 
 const pulseAnimation = keyframes`
     0% {
@@ -40,63 +39,97 @@ const pulseAnimation = keyframes`
 
 
 export const Background = styled.section`
-background-image: ${vars.HomePageBG};
+justify-content: center;
+align-items: center;
+text-align: center;
 display: flex;
-padding-top: 80px;
-padding-bottom: 170px;
-position: relative;
+background-image: ${vars.HomePageBG};
 height: 580px;
+@media screen and (min-width: ${breackPoints.md} {
+  padding-top: 80px;
+  padding-bottom: 170px;
+  position: relative;
+}
+
+
+// background-image: ${vars.HomePageBG};
+// display: flex;
+// padding-top: 80px;
+// padding-bottom: 170px;
+// position: relative;
+// height: 580px;
 `;
 
 export const HeroWrapper = styled.div`
+width: 80%;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+@media screen and (min-width: ${breackPoints.md} {
 margin-left: 174px;
 width: 35%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+}
 `;
 
 export const HeroTitle = styled.h1`
-font-size: 45px;
-color: ${colors.primaryWhite};
+  font-size: 35px;
+  color: ${colors.primaryWhite};
+  margin-bottom: 50px;
+@media screen and (min-width: ${breackPoints.md} {
+  font-size: 45px;
+  margin-bottom: 0;
+}
 `;
 
 export const HeroSlider = styled.div`
-position: absolute;
-right: 0;
-width: 800px;
+ display: none;
 
- transition: transform 1.2s ease-in-out;
+  @media screen and (min-width: ${breackPoints.md}) {
+    display: inline;
+    position: absolute;
+    right: 0;
+    width: 800px;
+    transition: transform 1.2s ease-in-out;
   
-  & .image-enter {
-    opacity: 0;
-    transform: translateX(50%);
-    width: 0;
-    height: 0;
-  }
+    & .image-enter {
+      opacity: 0;
+      transform: translateX(50%);
+      width: 0;
+      height: 0;
+    }
   
-  & .image-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    & .image-enter-active {
+      opacity: 1;
+      transform: translateX(0);
+    }
   
-  & .image-exit {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    & .image-exit {
+      opacity: 1;
+      transform: translateX(0);
+    }
   
-  & .image-exit-active {
-    opacity: 0;
-    transform: translateX(-50%);
+    & .image-exit-active {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
   }
 `;
 
 export const SliderImg = styled.img`
-position: relative;
-right: 0;
-top: 0;
-width: 800px;
-transition: opacity 1.2s ease-in-out;
+width: 200px;
+
+@media screen and (min-width: ${breackPoints.md}) {
+  width: 800px;
+  position: relative;
+  right: 0;
+  top: 0;
+  transition: opacity 1.2s ease-in-out;
+}
 `;
 
 export const SliderBtn = styled.button`

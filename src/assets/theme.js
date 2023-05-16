@@ -27,4 +27,5 @@ export const breackPoints = {
     md: '768px',
     xl: '1200px',
     xxl: '1400px',
+    xxxl: '1600px',
 };

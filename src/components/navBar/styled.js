@@ -21,7 +21,7 @@ justify-content: center;
   top: 32px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1600px;
+  width: 100%;
   border-radius: 0;
 }
 `; 

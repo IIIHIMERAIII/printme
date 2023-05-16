@@ -1,13 +1,21 @@
 import styled from "styled-components";
 import Scrollbars from 'simplebar-react';
-import { colors } from "../../assets/theme";
+import { colors, breackPoints } from "../../assets/theme";
 
 
 export const ScrollBar = styled(Scrollbars)`
-margin-left: auto;
-width:60%;
+width: 100%;
 cursor: default;
 background: ${colors.primaryWhite};
+border-radius: 8px;
+
+@media screen and (min-width: ${breackPoints.md}{
+  margin-left: auto;
+  width:60%;
+  cursor: default;
+  border-radius: 0;
+  background: ${colors.primaryWhite};
+}
 `;
 
 export const ScrollBarList = styled.ul`
@@ -48,11 +56,20 @@ gap: 20px;
 `;
 
 export const ItemTitle = styled.p`
-font-size: 22px;
-width: 20%; 
+font-size: 16px;
+
+@media screen and (min-width: ${breackPoints.md} {
+  width: 20%; 
+  font-size: 22px;
+}
 `;
 
 export const ItemText = styled.p`
-font-size: 18px;
-width: 100%;
+font-size: 11px;
+
+@media screen and (min-width: ${breackPoints.md} {
+  font-size: 22px;
+  font-size: 18px;
+  width: 100%;
+}
 `;

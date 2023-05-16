@@ -16,7 +16,7 @@ import h2 from '../../images/h2.jpg';
 
 const sliderItems = [
     { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' },
-    { img: h2, title: 'Вигтовлення технічної документації на вивіску', link: '/products'  }
+    { img: h2, title: 'Виготовлення технічної документації на вивіску', link: '/products'  }
 ];
 
 export const Hero = () => {
