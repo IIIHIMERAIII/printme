@@ -9,7 +9,6 @@ import {
     ItemImg,
     ItemTitle,
 } from "./styled";
-import { Link } from "react-router-dom";
 import { Container } from "../../assets/container";
 
 export const Gallery = ({title, array}) => {

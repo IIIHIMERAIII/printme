@@ -9,7 +9,7 @@ cursor: default;
 background: ${colors.primaryWhite};
 border-radius: 8px;
 
-@media screen and (min-width: ${breackPoints.md}{
+@media screen and (min-width: ${breackPoints.md}){
   margin-left: auto;
   width:60%;
   cursor: default;
@@ -58,7 +58,7 @@ gap: 20px;
 export const ItemTitle = styled.p`
 font-size: 16px;
 
-@media screen and (min-width: ${breackPoints.md} {
+@media screen and (min-width: ${breackPoints.md}) {
   width: 20%; 
   font-size: 22px;
 }
@@ -67,7 +67,7 @@ font-size: 16px;
 export const ItemText = styled.p`
 font-size: 11px;
 
-@media screen and (min-width: ${breackPoints.md} {
+@media screen and (min-width: ${breackPoints.md}) {
   font-size: 22px;
   font-size: 18px;
   width: 100%;

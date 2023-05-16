@@ -7,7 +7,18 @@ margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
-max-width: ${breackPoints.xl};
+@media screen and (min-width: ${breackPoints.md}) {
+    max-width: ${breackPoints.md};
+}
+
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    max-width: ${breackPoints.xl};
+}
+
+@media screen and (min-width: ${breackPoints.xxxl}) {
+    max-width: ${breackPoints.xxxl};
+}
 `;
 
 

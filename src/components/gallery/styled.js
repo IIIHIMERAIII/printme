@@ -29,22 +29,43 @@ display: flex;
 `;
 
 export const CategoryList = styled.ul`
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
 
-@media screen and (min-width: ${breackPoints.md} {
-  gap: 30px;
+  @media screen and (min-width: ${breackPoints.sm}) {
+    gap: 30px;
+  }
+  
+  @media screen and (min-width: ${breackPoints.md}) {
+    gap: 30px;
+  }
 
-}
-
+  @media screen and (min-width: ${breackPoints.xl}) {
+    gap: 40px;
+  }
 `;
 
 export const ListItem = styled.li`
-height: 218px;
+height: 210px;
 position: relative;
-width: 22%;
+width: 40%;
+
+@media screen and (min-width: ${breackPoints.sm}) {
+  height: 340px;
+   width: 45%;
+}
+
+@media screen and (min-width: ${breackPoints.md}) {
+  width: 30%;
+  height: 270px;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+  width: 20%;
+  height: 360px;
+}
 `;
 
 export const ItemLink = styled(Link)`
