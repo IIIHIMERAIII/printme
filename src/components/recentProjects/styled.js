@@ -60,9 +60,15 @@ transition: all 0.8s ease-in-out;
     &:hover::before {
         opacity: 0.8;
     }
+
 @media screen and (min-width: ${breackPoints.sm}) {    
     &::before {
         top: 47%;
+    }
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    &::before {
+        top: 49%;
     }
 }
 
@@ -91,47 +97,37 @@ export const HoverWrapper = styled.div`
         opacity:1;
 
         @media screen and (min-width: ${breackPoints.sm}) {
-                top: 30%;
-                left: 42%;
-                position: absolute;
-                opacity: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                opacity:1;
+            top: 30%;
+            left: 42%;
+        }
+        
+        @media screen and (min-width: ${breackPoints.md}) {
+            top: -5px;
+            left: 30%;
+        }
+
+        @media screen and (min-width: ${breackPoints.xl}){
+            top: 20%;
+            left: 35%;
+            width: 35%;
         }
   }
-
-        //   @media screen and (min-width: ${breackPoints.md}) {
-        //         width: 120px;
-        //         height: 120px;
-        //         top: 35%;
-        //         left: 39%;
-        //         position: absolute;
-        //         opacity: 1;
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: center;
-        //         flex-direction: column;
-        //         opacity:1;
-        // }
 `;
 
 
 export const HoverTitle = styled.p`
 font-size: 20px;
 margin-bottom: 10px;
-font-weight: 600;
 color: ${colors.primaryWhite};
 opacity: inherit;
 
 @media screen and (min-width: ${breackPoints.md}) {
     font-size: 50px;
     margin-bottom: 30px;
-    font-weight: 600;
-    color: ${colors.primaryWhite};
-    opacity: inherit;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    font-size: 60px;
 }
 `;
 
@@ -157,4 +153,8 @@ height: 30px;
     height: 80px;
 }
 
+@media screen and (min-width: ${breackPoints.xl}) {
+    width: 100px;
+    height: 100px;
+}
 `;

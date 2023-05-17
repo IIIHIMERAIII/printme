@@ -5,7 +5,7 @@ export const GalleryWrapper = styled.div`
 margin-top: 50px;
 
 @media screen and (min-width: ${breackPoints.md}) {
-  margin-top: 0;
+  margin-top: 20;
 }
 `;
 

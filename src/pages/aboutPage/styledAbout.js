@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../assets/theme";
+import { colors, breackPoints } from "../../assets/theme";
 
 export const AboutWrapper = styled.div`
 padding-top:160px;
@@ -23,9 +23,23 @@ width: 100%;
 
 export const ContactsList = styled.ul`
 width: 100%;
-display: flex;
-justify-content: space-around;
+gap: 50px;
 margin-bottom: 120px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+margin-bottom: 120px;
+
+@media screen and (min-width: ${breackPoints.sm}) {
+    flex-direction: row;
+    align-items: baseline;
+}
+
+@media screen and (min-width: ${breackPoints.md}) {
+    justify-content: space-between;
+}
 `;
 
 export const ContactsListItem = styled.li`

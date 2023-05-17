@@ -124,8 +124,8 @@ display: flex;
 `;
 
 export const SocialSvg = styled.svg`
-width: 80px;
-height: 80px;
+width: 40px;
+height: 40px;
 cursor: pointer;
 fill: ${colors.primaryWhite};
 transition: all ${vars.ColorTransition};
@@ -135,6 +135,11 @@ transition: all ${vars.ColorTransition};
 {
     fill: ${colors.orange};
     transform: scale(1.1);
+}
+
+@media screen and (min-width: ${breackPoints.sm}) {
+    width: 80px;
+    height: 80px;
 }
 `;
 

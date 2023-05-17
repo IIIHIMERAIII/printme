@@ -21,6 +21,7 @@ export const BtnWrapper = styled.div`
 
 @media screen and (min-width: ${breackPoints.md} {
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     display: flex;
     height: 40px;

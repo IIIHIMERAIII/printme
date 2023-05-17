@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { colors, vars, breackPoints } from "../../assets/theme";
 
-export const HeaderWrapper = styled.header`
+
+export const HeaderContainer = styled.header`
+
+`;
+
+export const HeaderWrapper = styled.div`
 display: none;
 @media screen and (min-width: ${breackPoints.md}) {
     display: inline;
