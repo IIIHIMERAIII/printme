@@ -71,6 +71,7 @@ width: 40%;
 export const ItemLink = styled(Link)`
 height: 100%;
 display: inline-flex;
+position: relative;
 `;
 
 export const NeonWrapper = styled.div`
