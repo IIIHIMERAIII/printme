@@ -51,12 +51,12 @@ export const Hero = () => {
                     />
                  ))}
             </HeroSlider>
-            <SliderBtn onClick={previousImage} style={{ left: '5px' }} > 
+            <SliderBtn onClick={previousImage}  className='leftSliderBtn' > 
                 <SliderBtnSvg>
                     <use  href={`${sprite}#circle_left`}/>
                 </SliderBtnSvg>
             </SliderBtn>
-            <SliderBtn onClick={nextImage} style={{ right: '5px' }}>
+            <SliderBtn onClick={nextImage} className='rightSliderBtn'>
                 <SliderBtnSvg>
                     <use  href={`${sprite}#circle_right`}/>
                 </SliderBtnSvg>

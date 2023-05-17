@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, vars} from "../../assets/theme";
+import { colors, breackPoints} from "../../assets/theme";
 import { NavLink as Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
@@ -21,8 +21,18 @@ justify-content: center;
   top: 32px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 768px;
   border-radius: 0;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    &.sticky {
+      width: 1200px;
+}
+  
+@media screen and (min-width: ${breackPoints.xxl}) {
+  &.sticky {
+    width: 1600px;
 }
 `; 
 

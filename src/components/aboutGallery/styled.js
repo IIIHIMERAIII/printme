@@ -1,8 +1,12 @@
 import styled, { css, keyframes} from "styled-components";
-import {colors} from '../../assets/theme'
+import {colors, breackPoints} from '../../assets/theme'
 
 export const GalleryWrapper = styled.div`
+margin-top: 50px;
 
+@media screen and (min-width: ${breackPoints.md}) {
+  margin-top: 0;
+}
 `;
 
 // items animations
@@ -18,7 +22,7 @@ const itemGrowUp = keyframes`
 
 
 export const MainImg = styled.img`
-height: 330px;
+height: 220px;
 width: 100%;
 margin-bottom: 20px;
 transition: opacity ${(props) => props.transitionDuration}ms ease-in-out;
@@ -28,6 +32,12 @@ transition: opacity ${(props) => props.transitionDuration}ms ease-in-out;
     css`
       opacity: 0;
     `}
+
+@media screen and (min-width: ${breackPoints.md}){
+  height: 330px;
+  width: 100%;
+  margin-bottom: 20px;
+}
 `;
 
 export const GalleryList = styled.ul`
@@ -42,8 +52,8 @@ export const ListItem = styled.li`
 `;
 
 export const ItemImg = styled.img`
-width: 150px;
-height: 120px;
+width: 100%;
+height: 80px;
 cursor:pointer;
 
 border: 2px solid transparent; 
@@ -58,5 +68,9 @@ border: 2px solid transparent;
 &:hover {
     animation: ${itemGrowUp} 0.2s ease-in-out;
     transform: scale(1.1);
+}
+
+@media screen and (min-width: ${breackPoints.md}) {
+  height: 120px;
 }
 `;

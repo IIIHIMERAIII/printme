@@ -28,37 +28,47 @@ export const ListItem = styled.li`
 padding: 5px;
 display: flex;
 align-items: center;
-margin-top: 80px;
 width: 100%;
 
-&:last-child {
+@media screen and (min-width: ${breackPoints.md}) {
+    &:last-child {
     margin-bottom: 80px; 
   }
+    margin-top: 80px;
+}
 `;
 
 
 export const ItemTetxWrapper = styled.div`
-align-items: center;
 justify-content: center;
 display: flex;
 width: 100%;
 gap: 20px;
 
-&:before{
+
+@media screen and (min-width: ${breackPoints.sm}) {
+  align-items: center;
+  &:before{
   content: '';
   background-image: url(${props => props.icon});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 23%;
+  width: 15%;
   height: 134px;
+}
 }
 `;
 
 export const ItemTitle = styled.p`
 font-size: 16px;
+width: 30%;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breackPoints.sm} {
+  width:20%;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
   width: 20%; 
   font-size: 22px;
 }
@@ -66,8 +76,14 @@ font-size: 16px;
 
 export const ItemText = styled.p`
 font-size: 11px;
+width:50%;
 
-@media screen and (min-width: ${breackPoints.md}) {
+
+@media screen and (min-width: ${breackPoints.sm} {
+  width:50%;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
   font-size: 22px;
   font-size: 18px;
   width: 100%;

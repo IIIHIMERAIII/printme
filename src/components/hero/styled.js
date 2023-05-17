@@ -45,9 +45,10 @@ text-align: center;
 display: flex;
 background-image: ${vars.HomePageBG};
 height: 580px;
-@media screen and (min-width: ${breackPoints.md} {
-  padding-top: 80px;
-  padding-bottom: 170px;
+position: relative;
+@media screen and (min-width: ${breackPoints.md}) {
+  padding-top: 180px;
+  padding-bottom: 180px;
   position: relative;
 }
 
@@ -67,12 +68,26 @@ align-items: center;
 display: flex;
 flex-direction: column;
 
-@media screen and (min-width: ${breackPoints.md} {
-margin-left: 174px;
-width: 35%;
+@media screen and (min-width: ${breackPoints.md}) {
+width: 60%;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+  margin-left: 40px;
+  margin-left: 50px;
+  margin-right: auto;
+  width: 45%;
+}
+
+@media screen and (min-width: ${breackPoints.xxl}) {
+  width: 35%;
+}
+
+@media screen and (min-width: ${breackPoints.xxxl}) {
+   margin-left: 100px;
+   
 }
 `;
 
@@ -80,9 +95,23 @@ export const HeroTitle = styled.h1`
   font-size: 35px;
   color: ${colors.primaryWhite};
   margin-bottom: 50px;
-@media screen and (min-width: ${breackPoints.md} {
+  height: 220px;
+
+@media screen and (min-width: ${breackPoints.md}) {
   font-size: 45px;
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+  height: 150px;
+}
+
+@media screen and (min-width: ${breackPoints.xxl}) {
+  height: auto;
+}
+
+@media screen and (min-width: ${breackPoints.xxxl}){
+  font-size: 55px;
 }
 `;
 
@@ -93,7 +122,7 @@ export const HeroSlider = styled.div`
     display: inline;
     position: absolute;
     right: 0;
-    width: 800px;
+    width: 600px;
     transition: transform 1.2s ease-in-out;
   
     & .image-enter {
@@ -118,17 +147,34 @@ export const HeroSlider = styled.div`
       transform: translateX(-50%);
     }
   }
+
+  @media screen and (min-width: ${breackPoints.xxl}) {
+    width: 700px;
+  }
+
+  @media screen and (min-width: ${breackPoints.xxxl}) {
+    width: 900px;
+  }
 `;
 
 export const SliderImg = styled.img`
-width: 200px;
+display: none;
 
-@media screen and (min-width: ${breackPoints.md}) {
-  width: 800px;
+@media screen and (min-width: ${breackPoints.xl}) {
+  display: inline;
+  width: 600px;
   position: relative;
   right: 0;
   top: 0;
   transition: opacity 1.2s ease-in-out;
+}
+
+@media screen and (min-width: ${breackPoints.xxl}) {
+  width: 700px;
+}
+
+@media screen and (min-width: ${breackPoints.xxxl}) {
+  width: 900px;
 }
 `;
 
@@ -140,12 +186,10 @@ width: 65px;
 height: 65px;
 padding: 0;
 position: absolute;
-top: 40%;
-background: transparent;
 border: none;
 border-radius: 50%;
 cursor: pointer;
-background: rgba( 255, 255, 255, 0.15 );
+background: rgba( 255, 255, 255, 0.15);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4.5px );
 -webkit-backdrop-filter: blur( 4.5px );
@@ -159,6 +203,7 @@ transition: background 0.5s;
     transform: scale(1.05);
     background: ${colors.orange};
 }
+
 `;
 
 export const SliderBtnSvg = styled.svg`

@@ -1,10 +1,37 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { colors, vars } from "../../assets/theme";
+import { colors, vars, breackPoints } from "../../assets/theme";
 
 export const FooterWrapper = styled.footer`
 background: ${colors.primaryGray};
 `;
+
+export const FooterContainer = styled.div`
+display:none;
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+
+@media screen and (min-width: ${breackPoints.md}) {
+    display: flex;
+    max-width: ${breackPoints.md};
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    max-width: ${breackPoints.xl};
+    justify-content: space-between;
+}
+
+@media screen and (min-width: ${breackPoints.xxxl}) {
+    max-width: ${breackPoints.xxxl};
+}
+`;
+
 
 export const SectionWrapper = styled.div`
 
@@ -47,9 +74,13 @@ transition: ${vars.ColorTransition};
 
 
 export const ContactsList = styled.ul`
-display: flex;
+display: none;
 flex-direction: column;
 gap: 5px;
+
+@media screen and (min-width: ${breackPoints.md}) {
+    display: flex;
+}
 `;
 
 export const ContactsListItem = styled.li`
@@ -69,10 +100,22 @@ background: ${colors.subGray};
 `;
 
 export const SocialWrapper = styled.div`
-width: 1170px;
+width: 100%;
 display: flex;
-justify-content: space-between;
+gap: 50px;
+justify-content: space-around;
 align-items: center;
+
+@media screen and (min-width: ${breackPoints.md}) {
+    width: ${breackPoints.md};
+    gap: 0;
+}
+
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    width: 1170px;
+    justify-content: space-between;
+}
 `;
 
 export const SocialList = styled.div`

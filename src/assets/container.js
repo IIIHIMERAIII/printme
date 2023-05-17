@@ -23,7 +23,7 @@ padding-left: 15px;
 
 
 export const RootContainer = styled.div`
-max-width: 600px
+max-width: 600px;
 margin-right: auto;
 margin-left: auto;
 
@@ -33,11 +33,6 @@ margin-left: auto;
 
 
 @media screen and (min-width: ${breackPoints.xl}) {
-    max-width: ${breackPoints.xl};
-}
-
-@media screen and (min-width: ${breackPoints.xxxl}) {
     max-width: ${breackPoints.xxxl};
 }
-
 `;

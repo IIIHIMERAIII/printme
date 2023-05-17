@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <AboutWrapper>
             <Container
-                style={{ display: 'flex', justifyContent: 'space-between' }}
+                style={{justifyContent: 'space-between' }}
             >
                 <Switcher/>
                 <AboutGallery/>

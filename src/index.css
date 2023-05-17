@@ -295,4 +295,39 @@ a {
 }
 
 
+/* sliderBtnMediaRules */
+  .rightSliderBtn, 
+  .leftSliderBtn {
+    top: 85%;
+  }
+
+  .rightSliderBtn {
+    right: 0px;
+  }
+
+  .leftSliderBtn {
+    left: 0px;
+  }
+
+  @media screen and (min-width: 420px){
+    .rightSliderBtn,
+    .leftSliderBtn {
+      top: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .rightSliderBtn,
+    .leftSliderBtn {
+        top: 50%;
+      }
+    
+    .rightSliderBtn {
+        right: 3px; 
+      }
+    .leftSliderBtn {
+        left: 3px;
+      }
+  }
+
 /* carousel */

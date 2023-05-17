@@ -20,7 +20,6 @@ export const vars = {
     TriLineShadow: `rgba(${colors.triLineShadow}0.8) 5px 5px, rgba(${colors.triLineShadow} 0.6) 10px 10px, rgba(${colors.triLineShadow} 0.3) 15px 15px, rgba(${colors.triLineShadow} 0.1) 20px 20px, rgba(${colors.triLineShadow} 0.05) 25px 25px`,
     TriLineShadowHover: `rgba(${colors.triLineShadowHover}0.8) 5px 5px, rgba(${colors.triLineShadowHover} 0.6) 10px 10px, rgba(${colors.triLineShadowHover} 0.3) 15px 15px, rgba(${colors.triLineShadowHover} 0.1) 20px 20px, rgba(${colors.triLineShadowHover} 0.05) 25px 25px`,
     ColorTransition: '0.3s ease',
-
 };
 
 export const breackPoints = {

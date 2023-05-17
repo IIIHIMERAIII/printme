@@ -1,5 +1,6 @@
 import {
     FooterWrapper,
+    FooterContainer,
     ContactsList,
     ContactsListItem,
     ContactsLink,
@@ -17,8 +18,8 @@ import {
     SectionText,
     SectionLink,
 } from "./styled"
-import {Container} from '../../assets/container'
-import { TriColorLine } from "../header/styled"
+import { TriColorLine } from "../header/styled";
+import { Container } from '../../assets/container';
 import { colors } from "../../assets/theme";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png'
@@ -41,8 +42,8 @@ export const Footer = () => {
     return (
         <>
             <FooterWrapper>
-                <TriColorLine />
-                <Container style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '60px', paddingTop: '60px', alignItems: 'center'}}>
+                <TriColorLine style={{margin: '0'}}/>
+                <FooterContainer >
                     <SectionWrapper>
                         <SectionList>
                             <SectionTitle style={{borderBottom: `2px solid ${colors.blue}`}}>Завітайте до нас</SectionTitle>
@@ -74,7 +75,7 @@ export const Footer = () => {
                                ))}
                             </SectionList>
                     </SectionWrapper>
-                </Container>
+                </FooterContainer>
                 <SubFooter>
                     <Container>
                         <SocialWrapper>
