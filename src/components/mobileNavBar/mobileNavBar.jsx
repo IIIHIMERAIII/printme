@@ -12,8 +12,6 @@ import {
 } from "./styled";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
-import { TabButton } from '../tabButton/tabButton';
-
 
 const navItems = [
   { redirect: '/', title: 'Головна' },
@@ -49,11 +47,19 @@ export const ModileNavBar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
+    }, []);
+    
+    useEffect(() => {
+      if (isMenuOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    }, [isMenuOpen]);
+    
     const handleToggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+      setMenuOpen(!isMenuOpen);
+    };
 
     return (
             <NavWrapper id="mobileNav">
