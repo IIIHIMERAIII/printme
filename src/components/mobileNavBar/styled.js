@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { colors, breackPoints} from "../../assets/theme";
+import { colors, breackPoints } from "../../assets/theme";
+import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
 z-index: 3;
@@ -13,6 +14,7 @@ height: 65px;
 background: ${colors.primaryGray};
 justify-content: space-between;
 width: 100%;
+position: absolute;
 
 &.sticky {
   position: fixed;
@@ -31,6 +33,7 @@ width: 100%;
 
 export const Logo = styled.img`
 height: 50px;
+cursor: pointer;
 `;
 
 export const BurgerBtn = styled.button`
@@ -56,11 +59,12 @@ height: 100%;
 `;
 
 export const MenuWrapper = styled.div`
-  position: fixed;
+  position: absolute;
   top: ${({ isOpen }) => (isOpen ? '65px' : '-100%')};
   left: 0;
+  left: 0px;
   width: 100%;
-  height: 70vh;
+  height: 40vh;
   opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
   transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-100%')});
@@ -68,4 +72,35 @@ export const MenuWrapper = styled.div`
   justify-content: center;
   display: flex;
   background: ${colors.primaryWhite};
+  border-bottom: 2px solid ${colors.orange};
+`;
+
+export const NavList = styled.ul`
+width: 100%;
+`;
+
+export const NavListItem = styled.li`
+padding: 15px;
+`;
+
+export const NavLink = styled(Link)`
+width: 100%;
+display: inherit;
+color: ${colors.primaryBlack};
+font-size: 20px;
+padding: 17px;
+box-shadow: inset 0 0 0 0 ${colors.orange};
+padding: 8px 0.5rem;;
+margin: 0 -0.5rem;
+transition: all 0.8s ease-in-out, box-shadow .3s ease-in-out;
+border-radius: 8px;
+font-size: 20px;
+font-weight: 600;
+
+&:hover,
+&.active {
+  color: #fff;
+  box-shadow: inset 700px 0 0 0 ${colors.orange};
+  transition-duration: 0.8s;
+}
 `;

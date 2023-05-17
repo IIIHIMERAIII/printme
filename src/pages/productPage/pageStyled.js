@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import { vars } from "../../assets/theme";
+import { vars, breackPoints } from "../../assets/theme";
 
 const glowingAnimation = keyframes`
   0% { background-position: 0 0; }
@@ -13,13 +13,19 @@ padding-bottom: 120px;
 `;
 
 export const ProductCard = styled.div`
+align-items: center;
 display: flex;
-
+flex-direction: column;
+@media screen and (min-width: ${breackPoints.md}){
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 `;
 
 export const AnimationWrapper = styled.div`
 position: relative;
-width: 80%;
+width: 100%;
 height: 100%;
 `;
 
@@ -63,8 +69,12 @@ transition: all 0.5s ease-in-out;
 `;
 
 export const TitleWrapper = styled.div`
-margin-left: 60px;
-width: 100%;
+  margin-top: 50px;
+@media screen and (min-width: ${breackPoints.md}) {
+  margin-left: 60px;
+  width: 100%;
+  margin-top: 0;
+}
 `;
 
 export const ProductImg = styled.img`

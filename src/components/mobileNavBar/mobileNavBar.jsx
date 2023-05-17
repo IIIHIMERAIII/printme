@@ -1,7 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { NavWrapper, BurgerBtn, BurgerSvg, MenuWrapper, Logo } from "./styled";
+import { useNavigate } from 'react-router-dom';
+import {
+    NavWrapper,
+    BurgerBtn,
+    BurgerSvg,
+    MenuWrapper,
+    Logo,
+    NavList,
+    NavListItem,
+    NavLink,
+} from "./styled";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
+import { TabButton } from '../tabButton/tabButton';
 
 
 const navItems = [
@@ -14,6 +25,11 @@ const navItems = [
 
 export const ModileNavBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
+
+    const onPress = () => {
+        navigate('/');
+    };
   
     useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +68,17 @@ export const ModileNavBar = () => {
                 </BurgerBtn>
                 <Logo
                     src={logo}
+                    onClick={onPress}
                 />
                 <MenuWrapper isOpen={isMenuOpen}>
-                    <h1>gsjkgnsdjkgndsjkgnsdgjk</h1>
+                    <NavList>
+                    {navItems.map((items, index) => (
+                            <NavListItem key={index}>
+                                <NavLink to={items.redirect}>{items.title}</NavLink>
+                            </NavListItem>
+                        ))}
+                    </NavList>
                 </MenuWrapper>
-
             </NavWrapper>
     )
 };

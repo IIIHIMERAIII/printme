@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { breackPoints } from "../../assets/theme";
 
 export const SwitcherWrapper = styled.div`
-// width: 500px;
+@media screen and (min-width: ${breackPoints.xl}) {
+    width: 60%;
+    margin-right: 35px;
+}
 `;
 
 export const SwitcherTitle = styled.h3`
@@ -19,7 +22,7 @@ export const BtnWrapper = styled.div`
     flex-direction: column;
     gap: 12px;
 
-@media screen and (min-width: ${breackPoints.md} {
+@media screen and (min-width: ${breackPoints.md}) {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;

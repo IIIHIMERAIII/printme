@@ -27,7 +27,7 @@ justify-content: center;
 
 @media screen and (min-width: ${breackPoints.xl}) {
     &.sticky {
-      width: 1200px;
+      width: 100vw;
 }
   
 @media screen and (min-width: ${breackPoints.xxl}) {
