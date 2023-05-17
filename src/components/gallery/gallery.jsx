@@ -12,8 +12,6 @@ import {
 import { Container } from "../../assets/container";
 
 export const Gallery = ({title, array}) => {
-    
-    console.log(array)
     return (
          <GalleryWrapper>
             <Container style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>

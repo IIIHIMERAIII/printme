@@ -14,9 +14,6 @@ export const ProductPage = () => {
      window.scrollTo(0, 0);
     }, [pathname]);
 
-
-    console.log(servicesItems)
-
     return (
         <ProductWrapper>
             <Container>

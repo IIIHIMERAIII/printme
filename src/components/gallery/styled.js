@@ -39,7 +39,7 @@ export const CategoryList = styled.ul`
   }
   
   @media screen and (min-width: ${breackPoints.md}) {
-    gap: 30px;
+    gap: 35px;
   }
 
   @media screen and (min-width: ${breackPoints.xl}) {
@@ -69,12 +69,12 @@ width: 40%;
 `;
 
 export const ItemLink = styled(Link)`
-height: 100%;
 display: inline-flex;
 `;
 
 export const NeonWrapper = styled.div`
 width: 100%;
+height: 100%;
 margin-bottom: 10px;
 border-radius: 16px;
 display: flex;
@@ -119,6 +119,7 @@ width: 100%;
 `;
 
 export const ItemTitle = styled.p`
+height: 50px;
 padding: 10px;
 font-size: 16px;
 background: ${colors.primaryGray};
