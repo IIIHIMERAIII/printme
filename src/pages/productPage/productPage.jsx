@@ -28,7 +28,7 @@ export const ProductPage = () => {
                     </AnimationWrapper>
                     <TitleWrapper>
                         <ProductTitle>{product.title}</ProductTitle>
-                        <ProductDescr>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quasi. Aliquam, corporis. Beatae repellat amet doloribus nesciunt aspernatur? Laborum totam, excepturi iste quo quam, quidem voluptate amet dignissimos enim facere facilis sed beatae numquam tempora reiciendis, culpa recusandae minus quod animi. Necessitatibus, dicta iste quod voluptatem, similique odit pariatur placeat consequuntur deserunt quasi obcaecati corrupti nemo. Officiis sint nam eos.</ProductDescr>
+                        <ProductDescr>{product.descr}</ProductDescr>
                     </TitleWrapper>
                 </ProductCard>
             </Container>
