@@ -1,0 +1,19 @@
+redirects:
+  - from: /old-page
+    to: /new-page
+    status: 301
+  - from: /legacy-url
+    to: /new-url
+    status: 302
+
+rewrites:
+  - source: /products
+    destination: /index.html
+  - source: /galleries
+    destination: /index.html
+  - source: /about
+    destination: /index.html
+  - source: /product/:id
+    destination: /index.html
+  - source: /gallery/:id
+    destination: /index.html
