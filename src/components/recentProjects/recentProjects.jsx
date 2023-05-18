@@ -20,6 +20,7 @@ export const RecentProjects = () => {
             />
             <Button
                 text='Показати більше'
+                link='/galleries'
             />
         </ProjectsWrapper>
     )

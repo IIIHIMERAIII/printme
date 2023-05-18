@@ -44,7 +44,8 @@ export const Switcher = () => {
                 {activeTab === 3 && <div>Content of Tab 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto est repudiandae exercitationem quas. Consequuntur veniam eum id temporibus delectus impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</div>}
             </ContentWrapper>
             <Button
-                text='Детальніше'
+              text='Детальніше'
+              link='/about'
             />
         </SwitcherWrapper>
     )

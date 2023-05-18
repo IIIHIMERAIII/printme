@@ -24,18 +24,11 @@ import { colors } from "../../assets/theme";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png'
 
-const navItems = ['Головна', 'Продукція', 'Клієнти', 'Фотогалерея', 'Про нас', 'Контакти'];
-const servicesItems = [
-    `Інтер'єрна реклама`,
-    'Брендування авто',
-    'Виготовлення печаток',
-    'Виставкові стенди',
-    'Герби та фірмова символіка',
-    'Зовнішня реклама',
-    'Оформлення композитом',
-    'Вигтовлення технічної документації',
-    'Сувенірна продукція та поліграфія',
-];
+import { navItems } from "../../assets/arrays";
+import { servicesItems } from "../../assets/arrays";
+
+
+
 const contactsItems = ['+380504049636', '+380684049636', 'exgrafika17@gmail.com'];
 
 export const Footer = () => {
@@ -60,7 +53,7 @@ export const Footer = () => {
                             <SectionTitle style={{borderBottom: `2px solid ${colors.pink}`}}>Послуги</SectionTitle>
                             {servicesItems.map((item, index) => (
                                <SectionListItem key={index}>
-                                     <SectionLink>{item}</SectionLink>
+                                     <SectionLink to={`/product/${item.id}`}>{item.title}</SectionLink>
                                </SectionListItem>
                                ))}
                         </SectionList>
@@ -70,7 +63,7 @@ export const Footer = () => {
                             <SectionTitle style={{borderBottom: `2px solid ${colors.orange}`}}>Навігація</SectionTitle>
                              {navItems.map((item, index) => (
                                <SectionListItem key={index}>
-                                     <SectionLink>{item}</SectionLink>
+                                     <SectionLink to={item.redirect}>{item.title}</SectionLink>
                                </SectionListItem>
                                ))}
                             </SectionList>
