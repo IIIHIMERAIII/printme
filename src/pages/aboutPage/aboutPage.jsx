@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
     AboutWrapper,
     PageTitle,
@@ -21,6 +23,13 @@ import sprite from '../../images/sprite.svg';
 
 
 export const AboutPage = () => {
+    const { pathname } = useLocation();
+        
+    useEffect(() => {
+     window.scrollTo(0, 0);
+    }, [pathname]);
+    
+    
     return (
         <AboutWrapper>
             <Container style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>

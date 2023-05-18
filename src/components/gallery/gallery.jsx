@@ -21,7 +21,7 @@ export const Gallery = ({title, array}) => {
                             {array.map((item, index) => (
                                 <ListItem key={index}>
                                     <ItemLink
-                                        to={`/product/${item.productId}`}
+                                        to={`/product/${item.id}`}
                                     >
                                     <NeonWrapper>
                                     <ItemImg

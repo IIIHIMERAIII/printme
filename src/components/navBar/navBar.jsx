@@ -2,13 +2,7 @@ import React, { useEffect } from 'react';
 import { NavWrapper, NavList, NavListItem, NavLink } from "./styled"
 import { Container } from "../../assets/container"
 
-const navItems = [
-  { redirect: '/', title: 'Головна' },
-  { redirect: '/products', title: 'Продукція' },
-  { redirect: '/gallery', title: 'Фотогалерея' },
-  { redirect: '/about', title: 'Контакти' },
-  
-];
+import { navItems } from '../../assets/arrays';
 
 export const NavBar = () => {
   useEffect(() => {

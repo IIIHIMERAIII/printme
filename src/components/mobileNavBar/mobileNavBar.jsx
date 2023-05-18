@@ -13,13 +13,7 @@ import {
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
 
-const navItems = [
-  { redirect: '/', title: 'Головна' },
-  { redirect: '/products', title: 'Продукція' },
-  { redirect: '/gallery', title: 'Фотогалерея' },
-  { redirect: '/about', title: 'Контакти' },
-  
-];
+import { navItems } from '../../assets/arrays';
 
 export const ModileNavBar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);

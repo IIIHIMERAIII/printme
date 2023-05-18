@@ -326,5 +326,22 @@ a {
 /* react image gallery  */
 
 .image-gallery-icon:hover {
-    color: var(--orange);
+  color: var(--orange);
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  padding: 50px 10px;
+  top: 50%;
+  transform: translateY(0)
+}
+
+.image-gallery-icon:focus {
+  outline: 2px solid var(--orange);
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 4px solid var(--orange);
 }

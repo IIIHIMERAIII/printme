@@ -5,10 +5,10 @@ import {
     HeroTitle,
     HeroSlider,
     SliderImg,
-    SliderBtn,
-    SliderBtnSvg,
 } from "./styled"
 import { Button } from "../button/button"
+import { SliderButton } from '../sliderButton/sliderButton';
+
 import sprite from '../../images/sprite.svg';
 
 import h1 from '../../images/h1.jpg';
@@ -51,16 +51,20 @@ export const Hero = () => {
                     />
                  ))}
             </HeroSlider>
-            <SliderBtn onClick={previousImage}  className='leftSliderBtn' > 
-                <SliderBtnSvg>
-                    <use  href={`${sprite}#circle_left`}/>
-                </SliderBtnSvg>
-            </SliderBtn>
-            <SliderBtn onClick={nextImage} className='rightSliderBtn'>
-                <SliderBtnSvg>
-                    <use  href={`${sprite}#circle_right`}/>
-                </SliderBtnSvg>
-            </SliderBtn>
+            <div className='leftSliderBtn' style={{position: 'absolute'}}>
+                <SliderButton
+                    onClick={previousImage}
+                    className='leftSliderBtn'
+                    icon={`${sprite}#circle_left`}
+                />
+            </div>
+            <div className='rightSliderBtn' style={{position: 'absolute'}}>
+                <SliderButton
+                onClick={previousImage}
+                icon={`${sprite}#circle_right`}
+                />
+            </div>
+
         </Background>
     )
 };
