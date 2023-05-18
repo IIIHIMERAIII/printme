@@ -57,6 +57,15 @@ export const AboutPage = () => {
                             </TitleWrapper>
                             <ContactSubTitle>exgrafika17@gmail.com</ContactSubTitle>
                         </ContactsListItem>
+                          <ContactsListItem>
+                            <TitleWrapper>
+                                <ContactsIcon>
+                                    <use href={`${sprite}#viber`} />
+                                </ContactsIcon>
+                                <ContactsTitle>Viber</ContactsTitle>
+                            </TitleWrapper>
+                            <ContactSubTitle>{`+38 (068) 404 96 36`}</ContactSubTitle>
+                        </ContactsListItem>
                     </ContactsList>
                     <Map />
                     <PageSubTitle>До зустрічі в нашому офісі</PageSubTitle>

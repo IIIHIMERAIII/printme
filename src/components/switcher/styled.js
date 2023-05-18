@@ -2,6 +2,14 @@ import styled from "styled-components";
 import { breackPoints } from "../../assets/theme";
 
 export const SwitcherWrapper = styled.div`
+align-items: center;
+display: flex;
+flex-direction: column;
+
+@media screen and (min-width: ${breackPoints.md}) {
+    align-items: start;
+}
+
 @media screen and (min-width: ${breackPoints.xl}) {
     width: 60%;
     margin-right: 35px;

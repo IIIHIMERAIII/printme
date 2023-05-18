@@ -64,13 +64,13 @@ export const ItemTitle = styled.p`
 font-size: 16px;
 width: 30%;
 
-@media screen and (min-width: ${breackPoints.sm} {
+@media screen and (min-width: ${breackPoints.sm}) {
   width:20%;
 }
 
 @media screen and (min-width: ${breackPoints.xl}) {
   width: 20%; 
-  font-size: 22px;
+  font-size: 30px;
 }
 `;
 
@@ -79,13 +79,12 @@ font-size: 11px;
 width:50%;
 
 
-@media screen and (min-width: ${breackPoints.sm} {
+@media screen and (min-width: ${breackPoints.sm}) {
   width:50%;
 }
 
 @media screen and (min-width: ${breackPoints.xl}) {
-  font-size: 22px;
   font-size: 18px;
-  width: 100%;
+  width: 80%;
 }
 `;

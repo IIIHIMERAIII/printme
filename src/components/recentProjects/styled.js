@@ -26,6 +26,16 @@ export const ProjectsSybTitle = styled.p`
     text-align: center;
 }
 
+@media screen and (min-width: ${breackPoints.md}) {
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+    font-size: 35px;
+    text-align: center;
+}
+
 `;
 
 export const GalleryWrapper = styled.div`

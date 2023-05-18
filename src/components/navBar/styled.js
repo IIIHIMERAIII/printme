@@ -3,14 +3,13 @@ import { colors, breackPoints} from "../../assets/theme";
 import { NavLink as Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
-z-index: 3;
+z-index: 10;
 padding-right: 20px;
 padding-left: 20px;
 position: relative;
 align-items: center;
 display: flex;
 top: 33px;
-z-index: 2;
 height: 65px;
 background: ${colors.primaryGray};
 border-radius: 30px;
@@ -63,5 +62,9 @@ font-weight: 600;
   color: #fff;
   box-shadow: inset 200px 0 0 0 ${colors.orange};
   transition-duration: 0.8s;
+}
+
+@media screen and (min-width: ${breackPoints.xl}) {
+  font-size: 28px;
 }
 `;

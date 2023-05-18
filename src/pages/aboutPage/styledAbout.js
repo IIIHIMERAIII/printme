@@ -7,48 +7,65 @@ padding-bottom: 160px;
 `;
 
 export const PageTitle = styled.h1`
-font-size: 40px;
+font-size: 26px;
 text-align: center;
 margin-bottom: 35px;
+
+@media screen and (min-width: ${breackPoints.md}) {
+font-size: 40px;
+}
+
+
+
 `;
 
 export const PageDescr = styled.p`
-text-align: center;
+font-size: 20px;
+text-align: justify;
 margin-bottom: 50px;
+
+@media screen and (min-width: ${breackPoints.xl})  {
+    font-size: 30px;
+}
 `;
 
 export const ContactsWrapper = styled.div`
-width: 100%;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+@media screen and (min-width: ${breackPoints.md}) {
+    width: 100%;
+}
 `;
 
 export const ContactsList = styled.ul`
-width: 100%;
 gap: 50px;
 margin-bottom: 120px;
-justify-content: center;
-align-items: center;
+align-items: self-start;
 display: flex;
 flex-direction: column;
 
 margin-bottom: 120px;
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breackPoints.md}) {
     flex-direction: row;
     align-items: baseline;
-}
-
-@media screen and (min-width: ${breackPoints.md}) {
     justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
 }
 `;
 
 export const ContactsListItem = styled.li`
-
+font-weight: 700;
+display: flex;
+flex-direction: column;
+gap: 10px;
 `;
 
 export const TitleWrapper = styled.div`
 display: flex;
-margin-bottom: 20px;
 display: flex;
 align-items: center;
 justify-content: flex-start;
@@ -71,8 +88,8 @@ fill:${colors.orange};
 `;
 
 export const PageSubTitle = styled.p`
-margin-top: 70px;
 text-align: center;
 font-size: 50px;
 font-weight: 600;
+margin-bottom: 10px;
 `;

@@ -7,6 +7,7 @@ import {
 } from "./styled"
 import { Button } from "../button/button";
 import { TabButton } from "../tabButton/tabButton";
+import { text } from "../../assets/text";
 
 export const Switcher = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -19,7 +20,7 @@ export const Switcher = () => {
 
     return (
           <SwitcherWrapper>
-            <SwitcherTitle>Про <br/> нашу компанію</SwitcherTitle>
+            <SwitcherTitle>Про нашу компанію</SwitcherTitle>
             <BtnWrapper>
                 <TabButton
                   className={activeTab === 1 ? 'active' : ''}
@@ -38,7 +39,7 @@ export const Switcher = () => {
                 />
           </BtnWrapper>
             <ContentWrapper>
-                {activeTab === 1 && <div>Content of Tab 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur amet libero illo natus dolores voluptates. Optio soluta aperiam omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, asperiores.</div>}
+                {activeTab === 1 && <div><p>{text.about }</p></div>}
                 {activeTab === 2 && <div>Content of Tab 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fuga inventore amet perferendis perspiciatis unde incidunt cum doloribus id earum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, illo?</div>}
                 {activeTab === 3 && <div>Content of Tab 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto est repudiandae exercitationem quas. Consequuntur veniam eum id temporibus delectus impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</div>}
             </ContentWrapper>

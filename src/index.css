@@ -1,17 +1,10 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
 @import '../node_modules/simplebar-react/dist/simplebar.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 :root {
-  --primary: #c31432;
-  --secondary: #240b36;
-  --gradient: linear-gradient(to right, #c31432, #240b36);
-  --color-white: #ffffff;
-  --color-black: #252a32;
-  --color-light: #f1f5f8;
-  --color-red: #d32f2f;
-  --color-blue: #148cb8;
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+--orange: #f5821f;
 }
 
 
@@ -64,7 +57,7 @@ a {
 
 .simplebar-track.simplebar-vertical {
   width: 41px;
-  border: 2px solid orange;
+  border: 2px solid var(--orange);
   border-radius: 25px;
   padding-top: 20px;
 }
@@ -72,8 +65,8 @@ a {
 .simplebar-scrollbar::before {
   margin-left: 2px;
   background-color: transparent;
-  border: 2px solid #f5821f;
-  background-color: #f5821f;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -128,7 +121,7 @@ a {
   content: "";
   right: 0;
   bottom: 0;
-  background: #f5821f;
+  background: var(--orange);
   box-shadow:
     -7px -7px 20px 0px rgba(255, 255, 255, .9),
     -4px -4px 5px 0px rgba(255, 255, 255, .9),
@@ -148,7 +141,7 @@ a {
 }
 
 .custom_btn:hover {
-  color: #f5821f;
+  color: var(--orange);
   background: transparent;
 }
 
@@ -166,7 +159,7 @@ a {
   content: "";
   left: 0;
   top: 0;
-  background: #f5821f;
+  background: var(--orange);
   box-shadow:
     -7px -7px 20px 0px rgba(255, 255, 255, .9),
     -4px -4px 5px 0px rgba(255, 255, 255, .9),
@@ -203,7 +196,7 @@ a {
   width: 220px;
   height: 90px;
   overflow: hidden;
-  background-color: #f5821f;
+  background-color: var(--orange);
   transition: 0.5s;
   border-radius: 8px;
 }
@@ -330,51 +323,8 @@ a {
       }
   }
 
-/* carousel */
-.container {
-  max-width: 80rem;
-  width: 100%;
-  padding: 4rem 2rem;
-  margin: 0 auto;
-}
+/* react image gallery  */
 
-.main .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .card {
-  color: var(--color-black);
-  border-radius: 2px;
-  background: var(--color-white);
-  box-shadow: var(--box-shadow);
-}
-
-.main .card-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding-top: 70%;
-  background: var(--color-white);
-}
-
-.main .card-image img {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 600px) {
-  .main .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-  }
+.image-gallery-icon:hover {
+    color: var(--orange);
 }

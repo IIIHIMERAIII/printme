@@ -11,10 +11,11 @@ background-position: center;
 
 export const AdvantagesTitle = styled.h2`
 font-size: 35px;
-text-align: end;
+text-align: center;
 margin-bottom: 35px;
 
-@media screen and (min-width: ${breackPoints.md}{
+@media screen and (min-width: ${breackPoints.md}){
 font-size: 50px;
+text-align: end;
 }
 `;

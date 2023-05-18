@@ -19,7 +19,7 @@ font-size: 35px;
 text-align: center;
 margin-bottom: 50px;
 
-@media screen and (min-width: ${breackPoints.md} {
+@media screen and (min-width: ${breackPoints.md}) {
   font-size: 50px;
 }
 `;
@@ -121,7 +121,8 @@ width: 100%;
 
 export const ItemTitle = styled.p`
 padding: 10px;
-height: 50px;
+height: 70px;
+max-width: 269px;
 font-size: 16px;
 background: ${colors.primaryGray};
 color: ${colors.primaryWhite};
@@ -137,8 +138,11 @@ ${ListItem}:hover & {
     color: orange;
   }
 
-  @media screen and (min-width: ${breackPoints.md} {
+  @media screen and (min-width: ${breackPoints.md}) {
+    font-size: 16px;
+  }
+
+    @media screen and (min-width: ${breackPoints.xl}) {
     font-size: 20px;
-    padding: 21px;
   }
 `;
