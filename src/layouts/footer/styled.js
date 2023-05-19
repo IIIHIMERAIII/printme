@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { colors, vars, breackPoints } from "../../assets/theme";
+import { colors, vars, breakpoints } from "../../assets/theme";
 
 export const FooterWrapper = styled.footer`
 background: ${colors.primaryGray};
@@ -13,22 +13,22 @@ margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
     display: flex;
-    max-width: ${breackPoints.md};
+    max-width: ${breakpoints.md};
     justify-content: center;
     padding: 50px;
     gap: 40px;
 }
 
 
-@media screen and (min-width: ${breackPoints.xl}) {
-    max-width: ${breackPoints.xl};
+@media screen and (min-width: ${breakpoints.xl}) {
+    max-width: ${breakpoints.xl};
     justify-content: space-between;
 }
 
-@media screen and (min-width: ${breackPoints.xxxl}) {
-    max-width: ${breackPoints.xxxl};
+@media screen and (min-width: ${breakpoints.xxxl}) {
+    max-width: ${breakpoints.xxxl};
 }
 `;
 
@@ -78,7 +78,7 @@ display: none;
 flex-direction: column;
 gap: 5px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
     display: flex;
 }
 `;
@@ -106,13 +106,13 @@ gap: 50px;
 justify-content: space-around;
 align-items: center;
 
-@media screen and (min-width: ${breackPoints.md}) {
-    width: ${breackPoints.md};
+@media screen and (min-width: ${breakpoints.md}) {
+    width: ${breakpoints.md};
     gap: 0;
 }
 
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
     width: 1170px;
     justify-content: space-between;
 }
@@ -137,7 +137,7 @@ transition: all ${vars.ColorTransition};
     transform: scale(1.1);
 }
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
     width: 80px;
     height: 80px;
 }

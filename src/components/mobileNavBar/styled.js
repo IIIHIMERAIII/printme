@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, breackPoints } from "../../assets/theme";
+import { colors, breakpoints } from "../../assets/theme";
 import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
@@ -22,11 +22,11 @@ position: absolute;
   border-radius: 0;
 }
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
     max-width: 600px;
 }
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
     display: none;
 }
 `; 
@@ -60,11 +60,11 @@ height: 100%;
 
 export const MenuWrapper = styled.div`
   position: absolute;
+  padding: 20px 0;
   top: ${({ isOpen }) => (isOpen ? '65px' : '-100%')};
   left: 0;
   left: 0px;
   width: 100%;
-  height: 40vh;
   opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
   transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-100%')});
@@ -73,6 +73,7 @@ export const MenuWrapper = styled.div`
   display: flex;
   background: ${colors.primaryWhite};
   border-bottom: 2px solid ${colors.orange};
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.4);
 `;
 
 export const NavList = styled.ul`

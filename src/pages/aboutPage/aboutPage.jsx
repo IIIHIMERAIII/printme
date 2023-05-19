@@ -77,7 +77,7 @@ export const AboutPage = () => {
                         </ContactsListItem>
                     </ContactsList>
                     <Map />
-                    <PageSubTitle>До зустрічі в нашому офісі</PageSubTitle>
+                    <PageSubTitle>До зустрічі в нашому офісі !</PageSubTitle>
                 </ContactsWrapper>
             </Container>
         </AboutWrapper>

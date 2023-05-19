@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, breackPoints } from "../../assets/theme";
+import { colors, breakpoints } from "../../assets/theme";
 
 export const AboutWrapper = styled.div`
 padding-top:160px;
@@ -11,7 +11,7 @@ font-size: 26px;
 text-align: center;
 margin-bottom: 35px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
 font-size: 40px;
 }
 
@@ -24,7 +24,7 @@ font-size: 20px;
 text-align: justify;
 margin-bottom: 50px;
 
-@media screen and (min-width: ${breackPoints.xl})  {
+@media screen and (min-width: ${breakpoints.xl})  {
     font-size: 30px;
 }
 `;
@@ -34,7 +34,7 @@ align-items: center;
 display: flex;
 flex-direction: column;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
     width: 100%;
 }
 `;
@@ -48,7 +48,7 @@ flex-direction: column;
 
 margin-bottom: 120px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
@@ -91,5 +91,5 @@ export const PageSubTitle = styled.p`
 text-align: center;
 font-size: 50px;
 font-weight: 600;
-margin-bottom: 10px;
+margin-top: 40px;
 `;

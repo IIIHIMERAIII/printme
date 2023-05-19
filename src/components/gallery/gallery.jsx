@@ -7,6 +7,7 @@ import {
     ListItem,
     NeonWrapper,
     ItemImg,
+    TitleWrapper,
     ItemTitle,
 } from "./styled";
 import { Container } from "../../assets/container";
@@ -26,8 +27,10 @@ export const Gallery = ({title, array}) => {
                                     <NeonWrapper>
                                     <ItemImg
                                         src={item.img}
-                                    />
-                                    <ItemTitle>{item.title}</ItemTitle>
+                                            />
+                                    <TitleWrapper>
+                                        <ItemTitle>{item.title}</ItemTitle>
+                                    </TitleWrapper>
                                     </NeonWrapper>
                                     </ItemLink>
                                 </ListItem>

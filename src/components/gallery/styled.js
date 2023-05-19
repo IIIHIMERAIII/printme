@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { colors, vars, breackPoints } from "../../assets/theme";
+import { colors, vars, breakpoints } from "../../assets/theme";
 
 const glowingAnimation = keyframes`
   0% { background-position: 0 0; }
@@ -19,7 +19,7 @@ font-size: 35px;
 text-align: center;
 margin-bottom: 50px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   font-size: 50px;
 }
 `;
@@ -34,15 +34,15 @@ export const CategoryList = styled.ul`
   gap: 35px;
   justify-content: center;
 
-  @media screen and (min-width: ${breackPoints.sm}) {
+  @media screen and (min-width: ${breakpoints.sm}) {
     gap: 30px;
   }
   
-  @media screen and (min-width: ${breackPoints.md}) {
+  @media screen and (min-width: ${breakpoints.md}) {
     gap: 30px;
   }
 
-  @media screen and (min-width: ${breackPoints.xl}) {
+  @media screen and (min-width: ${breakpoints.xl}) {
     gap: 40px;
   }
 `;
@@ -52,23 +52,24 @@ height: 210px;
 position: relative;
 width: 40%;
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
   height: 340px;
    width: 45%;
 }
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   width: 30%;
   height: 270px;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   width: 20%;
   height: 360px;
 }
 `;
 
 export const ItemLink = styled(Link)`
+width: 100%;
 height: 100%;
 display: inline-flex;
 position: relative;
@@ -119,30 +120,35 @@ height: 100%;
 width: 100%;
 `;
 
-export const ItemTitle = styled.p`
+export const TitleWrapper = styled.div`
 padding: 10px;
 height: 70px;
-max-width: 269px;
 font-size: 16px;
 background: ${colors.primaryGray};
 color: ${colors.primaryWhite};
 border-bottom-right-radius: 16px;
 border-bottom-left-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.4px);
 text-align: center;
--webkit-backdrop-filter: blur(3.4px);
 transition: color ${vars.ColorTransition};
 
 ${ListItem}:hover & {
     color: orange;
   }
 
-  @media screen and (min-width: ${breackPoints.md}) {
+  @media screen and (min-width: ${breakpoints.md}) {
     font-size: 16px;
   }
 
-    @media screen and (min-width: ${breackPoints.xl}) {
-    font-size: 20px;
+    @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 18px;
   }
+
+   @media screen and (min-width: ${breakpoints.xxxl}) {
+
+   }
+`;
+
+
+export const ItemTitle = styled.p`
+
 `;

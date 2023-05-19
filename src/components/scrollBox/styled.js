@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Scrollbars from 'simplebar-react';
-import { colors, breackPoints } from "../../assets/theme";
+import { colors, breakpoints } from "../../assets/theme";
 
 
 export const ScrollBar = styled(Scrollbars)`
@@ -9,11 +9,11 @@ cursor: default;
 background: ${colors.primaryWhite};
 border-radius: 8px;
 
-@media screen and (min-width: ${breackPoints.md}){
+@media screen and (min-width: ${breakpoints.md}){
   margin-left: auto;
   width:60%;
   cursor: default;
-  border-radius: 0;
+  border-radius: 8;
   background: ${colors.primaryWhite};
 }
 `;
@@ -30,11 +30,8 @@ display: flex;
 align-items: center;
 width: 100%;
 
-@media screen and (min-width: ${breackPoints.md}) {
-    &:last-child {
-    margin-bottom: 80px; 
-  }
-    margin-top: 80px;
+@media screen and (min-width: ${breakpoints.md}) {
+  margin: 30px 0;
 }
 `;
 
@@ -46,7 +43,7 @@ width: 100%;
 gap: 20px;
 
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
   align-items: center;
   &:before{
   content: '';
@@ -64,11 +61,11 @@ export const ItemTitle = styled.p`
 font-size: 16px;
 width: 30%;
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
   width:20%;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   width: 20%; 
   font-size: 30px;
 }
@@ -79,11 +76,11 @@ font-size: 11px;
 width:50%;
 
 
-@media screen and (min-width: ${breackPoints.sm}) {
+@media screen and (min-width: ${breakpoints.sm}) {
   width:50%;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   font-size: 18px;
   width: 80%;
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, breackPoints} from "../../assets/theme";
+import { colors, breakpoints} from "../../assets/theme";
 import { NavLink as Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
@@ -24,12 +24,12 @@ justify-content: center;
   border-radius: 0;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
     &.sticky {
       width: 100vw;
 }
   
-@media screen and (min-width: ${breackPoints.xxl}) {
+@media screen and (min-width: ${breakpoints.xxl}) {
   &.sticky {
     width: 1600px;
 }
@@ -64,7 +64,7 @@ font-weight: 600;
   transition-duration: 0.8s;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   font-size: 28px;
 }
 `;

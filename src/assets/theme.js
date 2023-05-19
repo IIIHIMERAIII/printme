@@ -22,10 +22,10 @@ export const vars = {
     ColorTransition: '0.3s ease',
 };
 
-export const breackPoints = {
-    sm: '420px',
-    md: '768px',
-    xl: '1200px',
-    xxl: '1400px',
-    xxxl: '1600px',
+export const breakpoints = {
+    sm:'420px',
+    md:'768px',
+    xl:'1200px',
+    xxl:'1400px',
+    xxxl:'1600px',
 };

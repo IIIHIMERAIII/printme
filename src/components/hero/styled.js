@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, vars, breackPoints } from "../../assets/theme";
+import { colors, vars, breakpoints } from "../../assets/theme";
 
 export const Background = styled.section`
 justify-content: center;
@@ -9,19 +9,11 @@ display: flex;
 background-image: ${vars.HomePageBG};
 height: 580px;
 position: relative;
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   padding-top: 180px;
   padding-bottom: 180px;
   position: relative;
 }
-
-
-// background-image: ${vars.HomePageBG};
-// display: flex;
-// padding-top: 80px;
-// padding-bottom: 170px;
-// position: relative;
-// height: 580px;
 `;
 
 export const HeroWrapper = styled.div`
@@ -31,24 +23,26 @@ align-items: center;
 display: flex;
 flex-direction: column;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
 width: 60%;
 display: flex;
 flex-direction: column;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   margin-left: 40px;
   margin-left: 50px;
   margin-right: auto;
+  height: 300px;
   width: 45%;
 }
 
-@media screen and (min-width: ${breackPoints.xxl}) {
+@media screen and (min-width: ${breakpoints.xxl}) {
   width: 35%;
+  height: 360px;
 }
 
-@media screen and (min-width: ${breackPoints.xxxl}) {
+@media screen and (min-width: ${breakpoints.xxxl}) {
    margin-left: 100px;
    
 }
@@ -60,20 +54,20 @@ export const HeroTitle = styled.h1`
   margin-bottom: 50px;
   height: 220px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   font-size: 45px;
-  margin-bottom: 40px;
+  margin-bottom: auto;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   height: 150px;
 }
 
-@media screen and (min-width: ${breackPoints.xxl}) {
+@media screen and (min-width: ${breakpoints.xxl}) {
   height: auto;
 }
 
-@media screen and (min-width: ${breackPoints.xxxl}){
+@media screen and (min-width: ${breakpoints.xxxl}){
   font-size: 55px;
 }
 `;
@@ -81,7 +75,7 @@ export const HeroTitle = styled.h1`
 export const HeroSlider = styled.div`
  display: none;
 
-  @media screen and (min-width: ${breackPoints.md}) {
+  @media screen and (min-width: ${breakpoints.md}) {
     display: inline;
     position: absolute;
     right: 0;
@@ -111,11 +105,11 @@ export const HeroSlider = styled.div`
     }
   }
 
-  @media screen and (min-width: ${breackPoints.xxl}) {
+  @media screen and (min-width: ${breakpoints.xxl}) {
     width: 700px;
   }
 
-  @media screen and (min-width: ${breackPoints.xxxl}) {
+  @media screen and (min-width: ${breakpoints.xxxl}) {
     width: 900px;
   }
 `;
@@ -123,7 +117,7 @@ export const HeroSlider = styled.div`
 export const SliderImg = styled.img`
 display: none;
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
   display: inline;
   width: 600px;
   position: relative;
@@ -132,11 +126,11 @@ display: none;
   transition: opacity 1.2s ease-in-out;
 }
 
-@media screen and (min-width: ${breackPoints.xxl}) {
+@media screen and (min-width: ${breakpoints.xxl}) {
   width: 700px;
 }
 
-@media screen and (min-width: ${breackPoints.xxxl}) {
+@media screen and (min-width: ${breakpoints.xxxl}) {
   width: 900px;
 }
 `;

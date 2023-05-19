@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import { vars, breackPoints } from "../../assets/theme";
+import { vars, breakpoints } from "../../assets/theme";
 
 const glowingAnimation = keyframes`
   0% { background-position: 0 0; }
@@ -16,7 +16,7 @@ export const ProductCard = styled.div`
 align-items: center;
 display: flex;
 flex-direction: column;
-@media screen and (min-width: ${breackPoints.md}){
+@media screen and (min-width: ${breakpoints.md}){
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -37,7 +37,6 @@ border-radius: 16px;
 display: flex;
 flex-direction: column;
 box-shadow: ${vars.TriLineShadow};
-cursor: pointer;
 transition: all 0.5s ease-in-out;
 
 &:hover,
@@ -69,12 +68,23 @@ transition: all 0.5s ease-in-out;
 `;
 
 export const TitleWrapper = styled.div`
-  margin-top: 50px;
-@media screen and (min-width: ${breackPoints.md}) {
+margin-top: 50px;
+align-items: center;
+display: flex;
+flex-direction: column;
+text-align: start;
+@media screen and (min-width: ${breakpoints.md}) {
+  align-items: start;
+  justify-content: space-between;
   margin-left: 60px;
   width: 100%;
   margin-top: 0;
+  height: 610px;
 }
+`;
+
+export const TextWrapper = styled.div`
+
 `;
 
 export const ProductImg = styled.img`
@@ -89,6 +99,7 @@ margin-bottom: 20px;
 `;
 
 export const ProductDescr = styled.p`
+margin-bottom: 50px;
 
 `;
 

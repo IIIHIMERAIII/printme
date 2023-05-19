@@ -5,7 +5,6 @@ import {
     GalleryList,
     ListItem,
     ItemImg,
-    HoverWrapper,
     HoverTitle,
     HoverBtn,
     HoverBtnSvg
@@ -20,18 +19,14 @@ export const PreviewGallery = ({ items }) => {
                 {items.map((item, index) => (
                     <ListItem key={index}>
                         <ItemImg src={item.img} />
-                        <HoverWrapper>
+                        <HoverBtn to={`/gallery/${item.id}`}>
                             <div>
                             <HoverTitle>{item.title}</HoverTitle>
                             </div>
-                            <HoverBtn
-                                to={`/gallery/${item.id}`}
-                            >
-                                <HoverBtnSvg>
-                                    <use href={`${sprite}#glass`} />
-                                </HoverBtnSvg>
-                            </HoverBtn>
-                        </HoverWrapper>
+                            <HoverBtnSvg>
+                                <use href={`${sprite}#glass`} />
+                            </HoverBtnSvg>
+                        </HoverBtn>
                     </ListItem>
                 ))}
             </GalleryList>

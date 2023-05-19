@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import { breackPoints } from "../../assets/theme";
+import { breakpoints } from "../../assets/theme";
 
 export const SwitcherWrapper = styled.div`
 align-items: center;
 display: flex;
 flex-direction: column;
 
-@media screen and (min-width: ${breackPoints.md}) {
+
+@media screen and (min-width: ${breakpoints.md}) {
     align-items: start;
 }
 
-@media screen and (min-width: ${breackPoints.xl}) {
+@media screen and (min-width: ${breakpoints.xl}) {
     width: 60%;
     margin-right: 35px;
 }
@@ -19,18 +20,18 @@ flex-direction: column;
 export const SwitcherTitle = styled.h3`
 font-size: 35px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
 font-size: 50px;
 }
 `;
 
 export const BtnWrapper = styled.div`
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+margin-top:10px;
+display: flex;
+flex-direction: column;
+gap: 12px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.sm}) {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -43,9 +44,29 @@ export const BtnWrapper = styled.div`
 export const ContentWrapper = styled.div`
 margin-top: 30px;
 margin-bottom: 40px;
+transition: opacity 0.8s ease 0.3s;
 
-@media screen and (min-width: ${breackPoints.md} {
+   > div {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out 0.3s;
+    visibility: hidden; 
+  }
+
+  > div.visible {
+    opacity: 1;
+    visibility: visible;
+    height: 130px; 
+  }
+
+  @media screen and (min-width: ${breakpoints.md}) {
     margin-top: 70px;
     margin-bottom: 80px;
-}
+  }
+`;
+
+export const TabContent = styled.div`
+  opacity: ${({ isActive }) => (isActive ? "1" : "0")};
+  transition: opacity 0.8s ease-in-out 0.3s;
+  height: 0; 
+  overflow: hidden; 
 `;

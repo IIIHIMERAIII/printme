@@ -1,10 +1,10 @@
 import styled, { css, keyframes} from "styled-components";
-import {colors, breackPoints} from '../../assets/theme'
+import {colors, breakpoints} from '../../assets/theme'
 
 export const GalleryWrapper = styled.div`
 margin-top: 50px;
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   margin-top: 20;
 }
 `;
@@ -33,7 +33,7 @@ transition: opacity ${(props) => props.transitionDuration}ms ease-in-out;
       opacity: 0;
     `}
 
-@media screen and (min-width: ${breackPoints.md}){
+@media screen and (min-width: ${breakpoints.md}){
   height: 330px;
   width: 100%;
   margin-bottom: 20px;
@@ -70,7 +70,7 @@ border: 2px solid transparent;
     transform: scale(1.1);
 }
 
-@media screen and (min-width: ${breackPoints.md}) {
+@media screen and (min-width: ${breakpoints.md}) {
   height: 120px;
 }
 `;
