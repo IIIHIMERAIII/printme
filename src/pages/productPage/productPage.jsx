@@ -40,7 +40,7 @@ export const ProductPage = () => {
                             <ProductDescr>{product.descr}</ProductDescr>
                         </TextWrapper>
                         <Button
-                            link={`/gallery/${product.id}`}
+                            link={`/galleries`}
                             text='Побачити галерею'
                         />
                     </TitleWrapper>
