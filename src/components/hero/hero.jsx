@@ -54,14 +54,15 @@ export const Hero = () => {
             <div className='leftSliderBtn' style={{position: 'absolute'}}>
                 <SliderButton
                     onClick={previousImage}
-                    className='leftSliderBtn'
                     icon={`${sprite}#circle_left`}
+                    label='move left'
                 />
             </div>
             <div className='rightSliderBtn' style={{position: 'absolute'}}>
                 <SliderButton
-                onClick={previousImage}
-                icon={`${sprite}#circle_right`}
+                    onClick={nextImage}
+                    icon={`${sprite}#circle_right`}
+                    label='move right'
                 />
             </div>
 

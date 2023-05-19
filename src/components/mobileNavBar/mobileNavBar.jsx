@@ -57,7 +57,7 @@ export const ModileNavBar = () => {
 
     return (
             <NavWrapper id="mobileNav">
-                <BurgerBtn>
+                <BurgerBtn aria-label="Open nav menu">
                     <BurgerSvg onClick={handleToggleMenu}>
                          {isMenuOpen ? (
                                <use href={`${sprite}#menu_close`}/>

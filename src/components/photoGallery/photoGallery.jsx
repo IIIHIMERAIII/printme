@@ -23,7 +23,7 @@ export const PhotoGallery = ({ items }) => {
                         className={`image-gallery-icon image-gallery-left-nav ${disabled ? 'disabled' : ''}`}
                         disabled={disabled}
                         onClick={onClick}
-                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`${colors.orange}`}}  
+                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`${colors.orange}`}}
                       >
                         <ArrowLeftIcon />
                       </SliderBtn>
