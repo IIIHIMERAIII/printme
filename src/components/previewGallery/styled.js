@@ -13,7 +13,6 @@ justify-content: center;
 `;
 
 export const ListItem = styled.li`
-margin-bottom: -4px;
 width: 33.3%;
 position: relative;
 overflow: hidden;
@@ -26,7 +25,7 @@ transition: all 0.8s ease-in-out;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 101%;
-    height: 101%;
+    height: 103%;
     background: ${colors.orange};
     transition: all 0.8s ease-in-out;
     opacity: 0;
@@ -51,6 +50,7 @@ transition: all 0.8s ease-in-out;
 
 export const ItemImg = styled.img`
 width: 100%;
+height: 100%;
 transition: transform 0.3s ease-in-out;
 `;
 
@@ -77,6 +77,7 @@ opacity: inherit;
 `;
 
 export const HoverBtn = styled(Link)`
+    
     opacity: 0;
     display:none;
     text-align: center;
@@ -89,11 +90,11 @@ export const HoverBtn = styled(Link)`
         top: 0;
         position: absolute;
         opacity: 1;
-        display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         opacity:1;
+        display: flex;
+        justify-content: space-evenly;
     }
 `;
 

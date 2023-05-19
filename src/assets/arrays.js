@@ -6,15 +6,71 @@ import s3 from '../images/s3.jpg';
 import s4 from '../images/s4.jpg';
 import s5 from '../images/s5.jpg';
 
-// recentProjects img
 
-import p1 from '../images/p1.jpg';
-import p2 from '../images/p2.jpg';
-import p3 from '../images/p3.jpg';
-import p4 from '../images/p4.jpg';
-import p5 from '../images/p5.jpg';
-import p6 from '../images/p6.jpg';
+// allGaleries img
 
+import g1 from '../images/g1.webp';
+import g2 from '../images/g2.webp';
+import g3 from '../images/g3.webp';
+import g4 from '../images/g4.webp';
+import g5 from '../images/g5.webp';
+import g6 from '../images/g6.webp';
+import g7 from '../images/g7.webp';
+import g8 from '../images/g8.webp';
+import g9 from '../images/g9.webp';
+import g10 from '../images/g10.webp';
+import g11 from '../images/g11.webp';
+import g12 from '../images/g12.webp';
+import g13 from '../images/g13.webp';
+import g14 from '../images/g14.webp';
+import g15 from '../images/g15.webp';
+import g16 from '../images/g16.webp';
+import g17 from '../images/g17.webp';
+import g18 from '../images/g18.webp';
+import g19 from '../images/g19.webp';
+import g20 from '../images/g20.webp';
+import g21 from '../images/g21.webp';
+import g22 from '../images/g22.webp';
+import g23 from '../images/g23.webp';
+import g24 from '../images/g24.webp';
+import g25 from '../images/g25.webp';
+import g26 from '../images/g26.webp';
+import g27 from '../images/g27.webp';
+import g28 from '../images/g28.webp';
+import g29 from '../images/g29.webp';
+import g30 from '../images/g30.webp';
+import g31 from '../images/g31.webp';
+import g32 from '../images/g32.webp';
+import g33 from '../images/g33.webp';
+import g34 from '../images/g34.webp';
+import g35 from '../images/g35.webp';
+import g36 from '../images/g36.webp';
+import g37 from '../images/g37.webp';
+import g38 from '../images/g38.webp';
+import g39 from '../images/g39.webp';
+import g40 from '../images/g40.webp';
+import g41 from '../images/g41.webp';
+import g42 from '../images/g42.webp';
+import g43 from '../images/g43.webp';
+import g44 from '../images/g44.webp';
+import g45 from '../images/g45.webp';
+import g46 from '../images/g46.webp';
+import g47 from '../images/g47.webp';
+import g48 from '../images/g48.webp';
+import g49 from '../images/g49.webp';
+import g50 from '../images/g50.webp';
+import g51 from '../images/g51.webp';
+import g52 from '../images/g52.webp';
+import g53 from '../images/g53.webp';
+import g54 from '../images/g54.webp';
+import g55 from '../images/g55.webp';
+import g56 from '../images/g56.webp';
+import g57 from '../images/g57.webp';
+import g58 from '../images/g58.webp';
+import g59 from '../images/g59.webp';
+import g60 from '../images/g60.webp';
+import g61 from '../images/g61.webp';
+import g62 from '../images/g62.webp';   
 
 // nav items array
 
@@ -43,355 +99,135 @@ export const servicesItems = [
 // recent projects array
 
 export const projectsItems = [ 
-    { id: 1, img: p1, title: 'Title' },
-    { id: 2,img: p2, title: 'Title' },
-    { id: 3,img: p3, title: 'Title' },
-    { id: 4,img: p4, title: 'Title' },
-    { id: 5,img: p5, title: 'Title' },
-    { id: 6,img: p6, title: 'Title' },
+    { id: '14', img:g44, title: 'Герби та фірмова символіка' },
+    { id: '8',img: g25, title: `Інтер'єрна реклама`},
+    { id: '1',img: g5, title: 'Оформлення композитом' },
+    { id: '3',img: g14, title: 'Брендування авто' },
+    { id: '2',img: g42, title: 'Виготовлення печаток та штампів' },
+    { id: '4',img: g56, title: 'Зовнішня реклама' },
 ];
 
 // galleryies array
 
  export const galleryiesItems = [ 
-    { img: p1, title: 'Оформлення фасадів композитом' , id:'1' ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}
-     ]
-     },
-    { img: p2, title: 'Вивіски фасадні, об’ємні літери' , id:'2' ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p3, title: 'Роботи по брендуванню автотранспорта' , id:'3' ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p4, title: 'Символіка' , id:'4' ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p5, title: '3d візуалізація' , id:'5' ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p6, title: 'Комплексне оформлення фасадів' , id:6 ,  imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p1, title: 'Приклади виготовлення виставкових стендів' , id:'7'  , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p2, title: 'Роботи з інтер’єрної реклами' , id:'8'  , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p3, title: 'Роботи з сувенірної продукції та поліграфії' , id:'9'  , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p4, title: 'Світлові короби' , id:'10' , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p5, title: 'Світлодіодні рухомі рядки' , id:'11' , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p6, title: 'Торцеві вивіски' , id:'12' , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p1, title: 'Штендери' , id:'13' , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
-    { img: p2, title: 'Несвітлові вивіски' , id:'14' , imgSet: [    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6},
-    { original: p1, thumbnail:p1},
-    { original: p2, thumbnail:p2},
-    { original: p3, thumbnail:p3},
-    { original: p4, thumbnail:p4},
-    { original: p5, thumbnail:p5},
-    { original: p6, thumbnail:p6}]},
+    {title: 'Оформлення фасадів композитом',
+         img: g5,
+         id: '1',
+         imgSet:
+            [
+                { original: g5, thumbnail:g5},
+                { original: g2, thumbnail:g2},
+                { original: g1, thumbnail:g3},
+                { original: g4, thumbnail:g4},
+                { original: g3, thumbnail:g3},
+                { original: g6, thumbnail:g6},
+                { original: g7, thumbnail:g7},
+                { original: g8, thumbnail:g8},
+                { original: g9, thumbnail:g9},
+                { original: g10, thumbnail:g10},
+                { original: g11, thumbnail:g11},
+                { original: g12, thumbnail:g12},
+            ]
+        },
+    {title: 'Виготовлення печаток та штампів',
+         img: g42,
+         id: '2',
+         imgSet:
+            [
+                { original: g42, thumbnail:g42},
+                { original: g43, thumbnail:g43},
+                { original: g41, thumbnail:g41},
+            ]
+        },
+    {title: 'Роботи по брендуванню автотранспорта',
+         img: g14,
+         id: '3',
+         imgSet:
+            [
+                { original: g14, thumbnail:g14},
+                { original: g13, thumbnail:g13},
+                { original: g15, thumbnail:g15},
+            ]
+        },
+    {title: 'Зовнішня реклама',
+         img: g56,
+         id: '4',
+         imgSet:
+            [
+                { original: g56, thumbnail:g56},
+                { original: g50, thumbnail:g50},
+                { original: g51, thumbnail:g51},
+                { original: g52, thumbnail:g52},
+                { original: g53, thumbnail:g53},
+                { original: g54, thumbnail:g54},
+                { original: g55, thumbnail:g55},
+                { original: g57, thumbnail:g57},
+                { original: g58, thumbnail:g58},
+                { original: g59, thumbnail:g59},
+                { original: g60, thumbnail:g60},
+                { original: g61, thumbnail:g61},
+                { original: g62, thumbnail:g62},
+            ]
+        },
+    {title: 'Виготовлення виставкових стендів',
+         img: g16,
+         id: '7',
+         imgSet:
+            [
+                { original: g16, thumbnail:g16},
+                { original: g17, thumbnail:g17},
+                { original: g18, thumbnail:g18},
+                { original: g19, thumbnail:g19},
+            ]
+        },
+    {title: 'Роботи з інтер’єрної реклами',
+         img: g25,
+         id: '8',
+         imgSet:
+             [
+                { original: g25, thumbnail:g25},
+                { original: g21, thumbnail:g21},
+                { original: g22, thumbnail:g22},
+                { original: g23, thumbnail:g23},
+                { original: g24, thumbnail:g24},
+                { original: g20, thumbnail:g20},
+                { original: g26, thumbnail:g26},
+                { original: g27, thumbnail:g27},
+                { original: g28, thumbnail:g28},
+                { original: g29, thumbnail:g29},
+                { original: g30, thumbnail:g30},
+                { original: g30, thumbnail:g31}
+             ]
+        },
+    {title: 'Роботи з сувенірної продукції та поліграфії',
+         img: g36,
+         id: '9',
+        imgSet:
+            [
+                { original: g36, thumbnail:g36},
+                { original: g32, thumbnail:g32},
+                { original: g33, thumbnail:g33},
+                { original: g34, thumbnail:g34},
+                { original: g35, thumbnail:g35},
+                { original: g37, thumbnail:g37},
+                { original: g38, thumbnail:g38},
+                { original: g39, thumbnail:g39},
+                { original: g40, thumbnail:g40},
+            ]
+        },
+    {title: 'Герби та фірмова символіка',
+         img: g44,
+         id: '14',
+         imgSet:
+            [
+                { original: g44, thumbnail:g44},
+                { original: g45, thumbnail:g45},
+                { original: g46, thumbnail:g46},
+                { original: g47, thumbnail:g47},
+                { original: g48, thumbnail:g48},
+                { original: g49, thumbnail:g49},
+            ]
+        },
 ];
 
 
