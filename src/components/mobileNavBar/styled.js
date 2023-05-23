@@ -105,3 +105,9 @@ font-weight: 600;
   transition-duration: 0.8s;
 }
 `;
+
+export const LogoWrapper = styled.div`
+gap: 25px;
+display: flex;
+
+`;

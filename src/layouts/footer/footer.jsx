@@ -73,12 +73,16 @@ export const Footer = () => {
                     <Container>
                         <SocialWrapper>
                             <SocialList>
-                                <SocialSvg>
-                                    <use  href={`${sprite}#facebook`}/>
-                                </SocialSvg>
-                                <SocialSvg>
-                                    <use  href={`${sprite}#instagram`}/>
-                                </SocialSvg>
+                                <a href='https://www.facebook.com/exgrafika/' target='_blank' rel="noreferrer">
+                                    <SocialSvg>
+                                        <use  href={`${sprite}#facebook`}/>
+                                    </SocialSvg>
+                                </a>
+                                <a href="https://instagram.com/exgrafika_m?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noreferrer">
+                                    <SocialSvg>
+                                        <use  href={`${sprite}#instagram`}/>
+                                    </SocialSvg>
+                                </a>
                             </SocialList>
                             <RightsWrapper>
                                 <Logo

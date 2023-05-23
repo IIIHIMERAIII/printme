@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { LogoWrapper, LogoIcon} from './styled';
-import logoPng from '../../images/logo.png';
 
-export const Logo = () => {
+export const Logo = ({ src }) => {
      const navigate = useNavigate();
 
     const onPress = () => {
@@ -13,7 +12,7 @@ export const Logo = () => {
         <LogoWrapper>
             <LogoIcon
                 onClick={onPress}
-                src={logoPng}
+                src={src}
             />
         </LogoWrapper>
     )

@@ -9,9 +9,11 @@ import {
     NavList,
     NavListItem,
     NavLink,
+    LogoWrapper,
 } from "./styled";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
+import logo2 from '../../images/logo2.png';
 
 import { navItems } from '../../assets/arrays';
 
@@ -66,10 +68,16 @@ export const ModileNavBar = () => {
                         )}
                     </BurgerSvg>
                 </BurgerBtn>
-                <Logo
-                    src={logo}
-                    onClick={onPress}
-                />
+                <LogoWrapper>
+                  <Logo
+                      src={logo}
+                      onClick={onPress}
+                  />
+                  <Logo
+                      src={logo2}
+                      onClick={onPress}
+                  />
+                </LogoWrapper>
                 <MenuWrapper isOpen={isMenuOpen}>
                     <NavList>
                     {navItems.map((items, index) => (

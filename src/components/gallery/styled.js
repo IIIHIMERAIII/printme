@@ -136,7 +136,7 @@ ${ListItem}:hover & {
   }
 
   @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 16px;
+    font-size: 12px;
   }
 
     @media screen and (min-width: ${breakpoints.xl}) {

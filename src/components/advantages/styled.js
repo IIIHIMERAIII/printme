@@ -3,12 +3,17 @@ import { breakpoints } from "../../assets/theme";
 import print from '../../images/print.jpg'
 
 export const AdvantagesWrapper = styled.section`
-padding-top: 120px;
+padding-top: 30px;
 padding-bottom: 80px;
 
 @media screen and (min-width: ${breakpoints.md}){ 
 background-image: url(${print});
-background-position: center;
+background-repeat: no-repeat;
+padding-top: 30px;
+}
+
+@media screen and (min-width: ${breakpoints.xl}) {
+padding-top: 120px;
 }
 `;
 

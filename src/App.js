@@ -9,6 +9,7 @@ import { AboutPage } from './pages/aboutPage/aboutPage';
 import { GalleriesPage } from './pages/galleriesPage/galleriesPage';
 import { ProductPage } from './pages/productPage/productPage';
 import { GalleryPage } from './pages/galleryPage/gelleryPage';
+import { DocPage } from './pages/docPage/docPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path='/product/:id' element={<ProductPage />} />
         <Route path='/gallery/:id' element={<GalleryPage />} />
+        <Route path='/documentation' element={<DocPage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -79,7 +79,7 @@ text-align: start;
   margin-left: 60px;
   width: 100%;
   margin-top: 0;
-  height: 610px;
+  min-height: 610px;
 }
 `;
 
