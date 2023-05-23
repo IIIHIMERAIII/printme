@@ -11,7 +11,7 @@ import { SliderButton } from '../sliderButton/sliderButton';
 
 import sprite from '../../images/sprite.svg';
 
-import h1 from '../../images/h1.jpg';
+import h1 from '../../images/h1.webp';
 import h2 from '../../images/h2.jpg';
 
 const sliderItems = [
