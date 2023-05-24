@@ -7,7 +7,7 @@ padding-top: 120px;
 padding-bottom: 120px;
 background-image: url(${doc});
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 `;
 
 export const PageTitle = styled.h1`
@@ -23,9 +23,14 @@ font-size: 50px;
 
 export const PageSubTitle = styled.p`
 color: ${colors.primaryWhite};
+font-size: 16px;
+margin-bottom: 50px;
+
+@media screen and (min-width: ${breakpoints.md}) {
 font-size: 25px;
 margin-bottom: 200px;
 }
+
 `;
 
 
@@ -37,6 +42,7 @@ export const ImgLink = styled.a`
 export const Img = styled.img`
 transition: all 0.5s ease-in-out;
 border-radius: 16px;
+width: 100%;
 &:hover,
 &:focus
 {
@@ -62,8 +68,12 @@ transition: ${vars.ColorTransition};
 `;
 
 export const Text = styled.p`
-color: ${colors.primaryBlack};
+color: ${colors.primaryWhite};
 text-align: center;
-font-size: 20px;
+font-size: 16px;
 margin-top: 50px;
+
+@media screen and (min-width: ${breakpoints.md}) {
+font-size: 20px;
+}
 `;

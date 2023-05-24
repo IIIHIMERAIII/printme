@@ -120,6 +120,7 @@ display: none;
 @media screen and (min-width: ${breakpoints.xl}) {
   display: inline;
   width: 600px;
+  height: 445px;
   position: relative;
   right: 0;
   top: 0;
