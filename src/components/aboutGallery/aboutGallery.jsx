@@ -6,10 +6,10 @@ import {
   ListItem,
   ItemImg,
 } from "./styled"
-import ex1 from '../../images/test1.jpg';
-import ex2 from '../../images/test2.jpg';
-import ex3 from '../../images/test3.jpg';
-import ex4 from '../../images/test4.jpg';
+import ex1 from '../../images/ex1.webp';
+import ex2 from '../../images/ex2.webp';
+import ex3 from '../../images/ex3.webp';
+import ex4 from '../../images/g26.webp';
 
 const items = [ex1, ex2, ex3, ex4];
 const transitionDuration = 200;

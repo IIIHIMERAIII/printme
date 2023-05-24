@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { breakpoints } from "../../assets/theme";
-import print from '../../images/print.jpg'
+import print from '../../images/print.webp'
 
 export const AdvantagesWrapper = styled.section`
 padding-top: 30px;

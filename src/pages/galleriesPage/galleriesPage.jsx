@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { galleryiesItems} from '../../assets/arrays';
-import { GalleryWrapper } from './styled';
 import { PhotoGallery } from "../../components/photoGallery/photoGallery";
 
 export const GalleriesPage = () => {

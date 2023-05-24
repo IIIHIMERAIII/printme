@@ -106,20 +106,21 @@ export const HeroSlider = styled.div`
   }
 
   @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 700px;
+    width: 600px;
   }
 
   @media screen and (min-width: ${breakpoints.xxxl}) {
-    width: 900px;
+    width: 770px;
   }
 `;
 
 export const SliderImg = styled.img`
 display: none;
+border-radius: 16px;
 
 @media screen and (min-width: ${breakpoints.xl}) {
   display: inline;
-  width: 600px;
+  width: 500px;
   height: 445px;
   position: relative;
   right: 0;
@@ -128,10 +129,10 @@ display: none;
 }
 
 @media screen and (min-width: ${breakpoints.xxl}) {
-  width: 700px;
+  width: 600px;
 }
 
 @media screen and (min-width: ${breakpoints.xxxl}) {
-  width: 900px;
+  width: 770px;
 }
 `;
