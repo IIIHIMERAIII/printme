@@ -6,9 +6,9 @@ import {
   ListItem,
   ItemImg,
 } from "./styled"
-import ex1 from '../../images/ex1.webp';
-import ex2 from '../../images/ex2.webp';
-import ex3 from '../../images/ex3.webp';
+import ex1 from '../../images/g24.webp';
+import ex2 from '../../images/g29.webp';
+import ex3 from '../../images/g46.webp';
 import ex4 from '../../images/g26.webp';
 
 const items = [ex1, ex2, ex3, ex4];
