@@ -100,6 +100,10 @@ margin-bottom: 20px;
 
 export const ProductDescr = styled.p`
 margin-bottom: 50px;
+text-align: justify;
 
+@media screen and (min-width: ${breakpoints.xl}) {
+font-size: 20px;
+}
 `;
 

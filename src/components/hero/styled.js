@@ -78,7 +78,7 @@ export const HeroSlider = styled.div`
   @media screen and (min-width: ${breakpoints.md}) {
     display: inline;
     position: absolute;
-    right: 0;
+    right: 6%;
     width: 600px;
     transition: transform 1.2s ease-in-out;
   

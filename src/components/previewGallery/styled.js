@@ -32,7 +32,7 @@ transition: all 0.8s ease-in-out;
 }
 
     &:hover::before {
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
 @media screen and (min-width: ${breakpoints.sm}) {    
@@ -72,7 +72,7 @@ opacity: inherit;
 }
 
 @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 25px;
+    font-size: 35px;
 }
 `;
 

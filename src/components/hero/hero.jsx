@@ -12,7 +12,7 @@ import { SliderButton } from '../sliderButton/sliderButton';
 import sprite from '../../images/sprite.svg';
 
 import h1 from '../../images/h1.webp';
-import h2 from '../../images/h2.jpg';
+import h2 from '../../images/h2.webp';
 
 const sliderItems = [
     { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' },

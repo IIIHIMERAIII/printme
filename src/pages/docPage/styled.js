@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { breakpoints, colors, vars } from "../../assets/theme";
-import doc from '../../images/doc.jpg'; 
+import doc from '../../images/doc.webp'; 
 
 export const DocPageWrapper = styled.main`
 padding-top: 120px;

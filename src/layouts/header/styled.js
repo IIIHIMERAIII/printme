@@ -15,6 +15,7 @@ display: none;
 
 export const HoursWrapper = styled.div`
 height: 60px;
+justify-content: center;
 align-items: center;
 display: flex;  
 background: ${colors.primaryGray};
@@ -22,8 +23,8 @@ background: ${colors.primaryGray};
 
 export const Text = styled.p`
 color: ${colors.primaryWhite};
+text-align: center;
 font-size: 14px;
-text-align: start;
 width: 1200px;
 `;
 

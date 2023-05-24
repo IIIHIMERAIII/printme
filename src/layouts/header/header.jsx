@@ -12,7 +12,7 @@ import { Contacts } from "../../components/contacts/contacts";
 import { NavBar } from "../../components/navBar/navBar";
 import { ModileNavBar } from "../../components/mobileNavBar/mobileNavBar";
 import logo from '../../images/logo.png';
-import logo2 from '../../images/logo2.png';
+import logo2 from '../../images/logo2.webp';
 
 export const Header = () => {
     return (
@@ -20,7 +20,7 @@ export const Header = () => {
         <HeaderWrapper>
             <HoursWrapper>
                 <Container>
-                    <Text>Ми працюємо: Понеділок - Пʼятниця з 9:00 до 17:00</Text>
+                    <Text>Ми працюємо: Понеділок - Пʼятниця з 8:00 до 17:00</Text>
                 </Container>
             </HoursWrapper>
             <TriColorLine />

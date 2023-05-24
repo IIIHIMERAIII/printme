@@ -55,7 +55,7 @@ transition: opacity 0.8s ease 0.3s;
   > div.visible {
     opacity: 1;
     visibility: visible;
-    height: 130px; 
+    height: 150px;
   }
 
   @media screen and (min-width: ${breakpoints.md}) {
