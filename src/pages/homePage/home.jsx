@@ -5,6 +5,7 @@ import { About } from "../../components/about/about";
 import { RecentProjects } from "../../components/recentProjects/recentProjects";
 import { Gallery } from "../../components/gallery/gallery";
 import { servicesItems } from "../../assets/arrays";
+import { Flag } from "../../components/flag/flag";
 
 export const HomePage = () => {
     return (
@@ -16,7 +17,8 @@ export const HomePage = () => {
                 array={servicesItems}
         />
         <About />
-        <RecentProjects/>    
+        <RecentProjects />
+        <Flag/>    
         </>
     )
 };

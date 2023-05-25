@@ -33,8 +33,13 @@ transition: opacity ${(props) => props.transitionDuration}ms ease-in-out;
       opacity: 0;
     `}
 
-@media screen and (min-width: ${breakpoints.md}){
+@media screen and (min-width: ${breakpoints.sm}) {
   height: 330px;
+}
+
+
+@media screen and (min-width: ${breakpoints.md}){
+  height: 400px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -70,7 +75,11 @@ border: 2px solid transparent;
     transform: scale(1.1);
 }
 
-@media screen and (min-width: ${breakpoints.md}) {
+@media screen and (min-width: ${breakpoints.sm}) {
   height: 120px;
+}
+
+@media screen and (min-width: ${breakpoints.md}) {
+  height: 150px;
 }
 `;

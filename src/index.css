@@ -350,3 +350,18 @@ a {
 .image-gallery-swipe{
   height: auto;
 }
+
+.image-gallery-slide.center {
+  height: 500px;
+}
+
+.image-gallery-content,
+.image-gallery-slide,
+.image-gallery-image {
+  max-height: calc(100vh - 80px);
+  height: 500px;
+}
+
+.image-gallery-thumbnail-image {
+  height: 100px;
+}

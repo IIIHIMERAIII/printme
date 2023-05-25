@@ -25,7 +25,6 @@ export const Text = styled.p`
 color: ${colors.primaryWhite};
 text-align: center;
 font-size: 14px;
-width: 1200px;
 `;
 
 export const TriColorLine = styled.hr`

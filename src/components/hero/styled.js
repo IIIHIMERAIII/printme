@@ -9,6 +9,7 @@ display: flex;
 background-image: ${vars.HomePageBG};
 height: 580px;
 position: relative;
+
 @media screen and (min-width: ${breakpoints.md}) {
   padding-top: 180px;
   padding-bottom: 180px;
@@ -24,7 +25,7 @@ display: flex;
 flex-direction: column;
 
 @media screen and (min-width: ${breakpoints.md}) {
-width: 60%;
+width: 80%;
 display: flex;
 flex-direction: column;
 }
