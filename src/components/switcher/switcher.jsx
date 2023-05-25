@@ -31,7 +31,7 @@ export const Switcher = () => {
                 <TabButton
                   className={activeTab === 2 ? 'active' : ''}
                   onClick={() => handleTabClick(2)}
-                  text='Наша мета'
+                  text='Наші переваги'
                 />
                 <TabButton
                   className={activeTab === 3 ? 'active' : ''}
@@ -44,7 +44,7 @@ export const Switcher = () => {
     <p>{text.about}</p>
   </TabContent>
   <TabContent isActive={activeTab === 2} className={activeTab === 2 ? 'visible' : ''}>
-    <p>Content of Tab 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fuga inventore amet perferendis perspiciatis unde incidunt cum doloribus id earum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, illo?</p>
+    <p>{text.about2}</p>
   </TabContent>
   <TabContent isActive={activeTab === 3} className={activeTab === 3 ? 'visible' : ''}>
     <p>Content of Tab 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto est repudiandae exercitationem quas. Consequuntur veniam eum id temporibus delectus impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</p>

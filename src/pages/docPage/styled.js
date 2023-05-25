@@ -34,13 +34,15 @@ margin-bottom: 200px;
 `;
 
 export const ImgLink = styled.a`
-
+justify-content: center;
+align-items: center;
+display: flex;
 `;
 
 export const Img = styled.img`
 transition: all 0.5s ease-in-out;
 border-radius: 16px;
-width: 100%;
+width: 50%;
 border: 5px solid transparent;
 
 &:hover,

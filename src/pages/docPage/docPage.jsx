@@ -24,7 +24,7 @@ export const DocPage = () => {
                         <Img
                             src={gov}
                         />
-                    </ImgLink>
+                </ImgLink>
                 <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptas animi, sunt nobis, modi, illo aliquam suscipit minima provident ipsum ex dolores natus! Nesciunt, quam! Magnam, beatae recusandae, laboriosam culpa impedit voluptatibus blanditiis id enim quo amet quia qui pariatur reiciendis ad, temporibus veniam distinctio vel? Similique necessitatibus numquam accusamus!</Text>
             </Container>
         </DocPageWrapper>

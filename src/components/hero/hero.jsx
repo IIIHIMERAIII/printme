@@ -15,8 +15,8 @@ import h1 from '../../images/h1.webp';
 import h2 from '../../images/h2.webp';
 
 const sliderItems = [
-    { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' },
-    { img: h2, title: 'Оформлення технічної документації на спеціальні рекламні конструкції', link: '/documentation'  }
+    { img: h2, title: 'Оформлення паспорта на розміщення вивіски', link: '/documentation'  },
+    { img: h1, title: 'Член Української Асоціації Візуальної Індустрії', link: 'http://uavi.com.ua/' }
 ];
 
 export const Hero = () => {
