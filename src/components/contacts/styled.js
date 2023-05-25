@@ -26,6 +26,7 @@ export const ContactsItem = styled.li`
 font-size: 20px;
 color: ${colors.primaryBlack};
 height: 40px;
+font-family: 'Philosopher', sans-serif;
 
   @media screen and (min-width: ${breakpoints.xl}) {
       &:first-child::after {

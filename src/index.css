@@ -1,6 +1,7 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
 @import '../node_modules/simplebar-react/dist/simplebar.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 :root {
