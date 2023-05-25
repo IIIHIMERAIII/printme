@@ -13,7 +13,7 @@ import {
 } from "./styled";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
-import logo2 from '../../images/logo2.webp';
+import logo2 from '../../images/logo2.png';
 
 import { navItems } from '../../assets/arrays';
 

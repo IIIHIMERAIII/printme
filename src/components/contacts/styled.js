@@ -23,7 +23,7 @@ gap: 40px;
 `;
 
 export const ContactsItem = styled.li`
-font-size: 20px;
+font-size: 25px;
 color: ${colors.primaryBlack};
 height: 40px;
 font-family: 'Philosopher', sans-serif;
@@ -34,8 +34,8 @@ font-family: 'Philosopher', sans-serif;
       position: absolute;
       top: 4px;
       width: 1.5px;
-      height: 100%;
-      margin-right: 6px;
+      height: 144%;
+      margin-right: 60px;
       background-color: ${colors.primaryGray};
       right:180px;
     }

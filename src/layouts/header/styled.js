@@ -25,7 +25,7 @@ export const Text = styled.p`
 color: ${colors.primaryWhite};
 font-family: 'Philosopher', sans-serif;
 text-align: center;
-font-size: 14px;
+font-size: 24px;
 `;
 
 export const TriColorLine = styled.hr`
