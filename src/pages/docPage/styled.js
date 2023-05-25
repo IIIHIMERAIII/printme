@@ -33,8 +33,6 @@ margin-bottom: 200px;
 
 `;
 
-
-
 export const ImgLink = styled.a`
 
 `;
@@ -43,6 +41,8 @@ export const Img = styled.img`
 transition: all 0.5s ease-in-out;
 border-radius: 16px;
 width: 100%;
+border: 5px solid transparent;
+
 &:hover,
 &:focus
 {
