@@ -14,7 +14,7 @@ display: flex;
 `;
 
 export const Title = styled.p`
-font-size: 40px;
+font-size: 30px;
 color: white;
 
 @media screen and (min-width: ${breakpoints.md}) {

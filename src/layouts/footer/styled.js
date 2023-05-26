@@ -87,8 +87,16 @@ export const ContactsListItem = styled.li`
 
 `;
 
-export const ContactsLink = styled(Link)`
+export const ContactsLink = styled.a`
 color: ${colors.primaryWhite};
+
+transition: ${vars.ColorTransition};
+
+&:hover,
+&:focus
+{
+    color: ${colors.orange}
+}
 `;
 
 

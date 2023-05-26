@@ -121,9 +121,9 @@ width: 100%;
 `;
 
 export const TitleWrapper = styled.div`
-padding: 10px;
 height: 70px;
-font-size: 16px;
+padding-top: 10px;
+font-size: 10px;
 background: ${colors.primaryGray};
 color: ${colors.primaryWhite};
 border-bottom-right-radius: 16px;
@@ -134,6 +134,10 @@ transition: color ${vars.ColorTransition};
 ${ListItem}:hover & {
     color: orange;
   }
+
+  @media screen and (min-width: ${breakpoints.sm}) {
+    font-size: 12px;
+   }
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 12px;
@@ -150,5 +154,5 @@ ${ListItem}:hover & {
 
 
 export const ItemTitle = styled.p`
-
+padding: 2px;
 `;

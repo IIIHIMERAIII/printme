@@ -5,10 +5,25 @@ import {
   BtnWrapper,
   ContentWrapper,
   TabContent,
+  ClientsList,
+  ClientsListItem,
+  ClientsIcon,
 } from "./styled"
 import { Button } from "../button/button";
 import { TabButton } from "../tabButton/tabButton";
 import { text } from "../../assets/text";
+
+import c1 from '../../images/c1.png'
+import c3 from '../../images/c3.png'
+import c4 from '../../images/c4.png'
+import c5 from '../../images/c5.jpg'
+import c6 from '../../images/c6.jpg'
+import c7 from '../../images/c7.jpg'
+import c8 from '../../images/c8.jpg'
+import c9 from '../../images/c9.jpg'
+
+const clientsIcons = [c1, c3, c4, c5, c6, c7, c8, c9];
+
 
 export const Switcher = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -36,7 +51,7 @@ export const Switcher = () => {
                 <TabButton
                   className={activeTab === 3 ? 'active' : ''}
                   onClick={() => handleTabClick(3)}
-                  text='Обирай своє'
+                  text='Наші клієнти'
                 />
             </BtnWrapper>
 <ContentWrapper>
@@ -47,7 +62,15 @@ export const Switcher = () => {
     <p>{text.about2}</p>
   </TabContent>
   <TabContent isActive={activeTab === 3} className={activeTab === 3 ? 'visible' : ''}>
-    <p>Content of Tab 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto est repudiandae exercitationem quas. Consequuntur veniam eum id temporibus delectus impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</p>
+    <ClientsList>
+      {clientsIcons.map((item, index) => (
+        <ClientsListItem key={index}>
+          <ClientsIcon
+            src={item}
+          />
+        </ClientsListItem>
+      ))}
+    </ClientsList>
   </TabContent>
 </ContentWrapper>
             <Button

@@ -29,7 +29,11 @@ import { servicesItems } from "../../assets/arrays";
 
 
 
-const contactsItems = ['+380504049636', '+380684049636', 'exgrafika17@gmail.com'];
+const contactsItems = [
+    { target: '+380504049636', href: 'tel:+380504049636' },
+    { target: '+380684049636', href: 'tel:+380684049636' },
+    { target: 'exgrafika17@gmail.com', href: 'mailto:exgrafika17@gmail.com' }
+];
 
 export const Footer = () => {
     return (
@@ -44,7 +48,7 @@ export const Footer = () => {
                                 <SectionText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </SectionText>
                             </SectionListItem>
                             <SectionListItem style={{marginTop: '50px'}}>
-                                <SectionText>Будні дні: 8:00 - 17:00 <br /> Вихідні: Cуббота, Неділя</SectionText>
+                                <SectionText>Будні дні: 9:00 - 17:00 <br /> Вихідні: Cуббота, Неділя</SectionText>
                             </SectionListItem>
                         </SectionList>
                     </SectionWrapper>
@@ -93,7 +97,7 @@ export const Footer = () => {
                             <ContactsList>
                         {contactsItems.map((item, index) => (
                             <ContactsListItem key={index}>
-                                  <ContactsLink>{item}</ContactsLink>
+                                  <ContactsLink href={item.href}>{item.target}</ContactsLink>
                             </ContactsListItem>
                         ))}
                         </ContactsList>

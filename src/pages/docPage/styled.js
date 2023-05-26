@@ -21,7 +21,7 @@ font-size: 50px;
 }
 `;
 
-export const PageSubTitle = styled.p`
+export const PageSubTitle = styled.div`
 color: ${colors.primaryWhite};
 font-size: 16px;
 margin-bottom: 50px;
@@ -69,7 +69,7 @@ transition: ${vars.ColorTransition};
 }
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
 color: ${colors.primaryWhite};
 text-align: center;
 font-size: 16px;

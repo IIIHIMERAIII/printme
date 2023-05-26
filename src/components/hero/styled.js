@@ -32,13 +32,13 @@ flex-direction: column;
 
 @media screen and (min-width: ${breakpoints.xl}) {
   margin-left: 40px;
-  margin-left: 50px;
   margin-right: auto;
   height: 300px;
   width: 45%;
 }
 
 @media screen and (min-width: ${breakpoints.xxl}) {
+  margin-left: 100px;
   width: 35%;
   height: 360px;
 }
