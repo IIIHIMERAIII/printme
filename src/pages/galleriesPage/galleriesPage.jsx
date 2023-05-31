@@ -13,8 +13,6 @@ export const GalleriesPage = () => {
         galleryiesImg = galleryiesImg.concat(item.imgSet);
     });
 
-    console.log(galleryiesImg)
-
     useEffect(() => {
      window.scrollTo(0, 0);
     }, [pathname]);

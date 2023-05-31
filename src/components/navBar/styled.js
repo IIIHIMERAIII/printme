@@ -14,14 +14,17 @@ height: 65px;
 background: ${colors.primaryGray};
 border-radius: 30px;
 justify-content: center;
+transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
+
 
 &.sticky {
   position: fixed;
-  top: 32px;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 768px;
   border-radius: 0;
+  max-height: 65px;
 }
 
 @media screen and (min-width: ${breakpoints.xl}) {

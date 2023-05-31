@@ -6,7 +6,7 @@ import {
     HeroSlider,
     SliderImg,
 } from "./styled"
-import { Button } from "../button/button"
+import { Button } from "../button/button";
 import { SliderButton } from '../sliderButton/sliderButton';
 
 import sprite from '../../images/sprite.svg';
@@ -65,7 +65,6 @@ export const Hero = () => {
                     label='move right'
                 />
             </div>
-
         </Background>
     )
 };

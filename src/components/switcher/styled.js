@@ -28,7 +28,6 @@ font-size: 50px;
 export const BtnWrapper = styled.div`
 margin-top:10px;
 display: flex;
-flex-direction: column;
 gap: 12px;
 
 @media screen and (min-width: ${breakpoints.sm}) {
@@ -55,10 +54,10 @@ transition: opacity 0.8s ease 0.3s;
   > div.visible {
     opacity: 1;
     visibility: visible;
-    height: 250px;
+    height: 300px;
   }
 
-  @media screen and (min-width: ${breakpoints.md}) {
+  @media screen and (min-width: ${breakpoints.sm}) {
     margin-top: 70px;
     margin-bottom: 80px;
       > div.visible {
@@ -89,7 +88,7 @@ export const TabContent = styled.div`
 
 export const ClientsList = styled.ul`
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 gap: 25px;
