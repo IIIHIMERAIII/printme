@@ -13,17 +13,7 @@ import { Button } from "../button/button";
 import { TabButton } from "../tabButton/tabButton";
 import { text } from "../../assets/text";
 
-import c1 from '../../images/c1.png'
-import c3 from '../../images/c3.png'
-import c4 from '../../images/c4.png'
-import c5 from '../../images/c5.jpg'
-import c6 from '../../images/c6.jpg'
-import c7 from '../../images/c7.jpg'
-import c8 from '../../images/c8.jpg'
-import c9 from '../../images/c9.jpg'
-
-const clientsIcons = [c1, c3, c4, c5, c6, c7, c8, c9];
-
+import { clientsIcons } from "../../assets/arrays";
 
 export const Switcher = () => {
     const [activeTab, setActiveTab] = useState(1);

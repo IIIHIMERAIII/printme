@@ -28,7 +28,7 @@ margin-bottom: 50px;
 
 @media screen and (min-width: ${breakpoints.md}) {
 font-size: 25px;
-margin-bottom: 200px;
+margin-bottom: 120px;
 }
 
 `;

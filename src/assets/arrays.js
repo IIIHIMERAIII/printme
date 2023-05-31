@@ -74,6 +74,18 @@ import g60 from '../images/g60.webp';
 import g61 from '../images/g61.webp';
 import g62 from '../images/g62.webp';   
 
+// clients img
+
+import c1 from '../images/c1.png';
+import c3 from '../images/c3.png';
+import c4 from '../images/c4.png';
+import c5 from '../images/c5.jpg';
+import c6 from '../images/c6.jpg';
+import c7 from '../images/c7.jpg';
+import c8 from '../images/c8.jpg';
+import c9 from '../images/c9.jpg';
+
+
 // nav items array
 
 export const navItems = [
@@ -108,6 +120,9 @@ export const projectsItems = [
     { id: '2',img: g42, title: 'Виготовлення печаток та штампів' },
     { id: '4',img: g56, title: 'Зовнішня реклама' },
 ];
+
+export const clientsIcons = [c1, c3, c4, c5, c6, c7, c8, c9];
+
 
 // galleryies array
 
