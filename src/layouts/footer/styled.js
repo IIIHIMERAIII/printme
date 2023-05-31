@@ -12,6 +12,7 @@ margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
+border-top: 3px solid ${colors.orange};
 
 @media screen and (min-width: ${breakpoints.md}) {
     display: flex;

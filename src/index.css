@@ -1,7 +1,7 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
 @import '../node_modules/simplebar-react/dist/simplebar.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 :root {
@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: 'Alice', serif;
+  font-family: 'Play',sans-serif;
   /* Replace with imported font name */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -18,7 +18,6 @@ import {
     SectionText,
     SectionLink,
 } from "./styled"
-import { TriColorLine } from "../header/styled";
 import { Container } from '../../assets/container';
 import { colors } from "../../assets/theme";
 import sprite from '../../images/sprite.svg';
@@ -39,7 +38,6 @@ export const Footer = () => {
     return (
         <>
             <FooterWrapper>
-                <TriColorLine style={{margin: '0'}}/>
                 <FooterContainer >
                     <SectionWrapper>
                         <SectionList>

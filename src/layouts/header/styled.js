@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, vars, breakpoints } from "../../assets/theme";
+import { colors, breakpoints } from "../../assets/theme";
 
 
 export const HeaderContainer = styled.header`
@@ -19,25 +19,20 @@ justify-content: center;
 align-items: center;
 display: flex;  
 background: ${colors.primaryGray};
+border-bottom: 3px solid ${colors.orange};
 `;
 
 export const Text = styled.p`
 color: ${colors.primaryWhite};
-font-family: 'Philosopher', sans-serif;
+font-family: 'Play',sans-serif;
 text-align: center;
 font-size: 24px;
 `;
 
-export const TriColorLine = styled.hr`
-height: 5px; 
-border: none;
-margin: 0;
-margin-bottom:20px;
-background: ${vars.TriLineGradient}; 
-`;
 
 export const ContactsWrapper = styled.div`
 background: ${colors.primaryWhite};
+padding-top: 20px;
 display: flex;
 justify-content: space-between;
 align-items: center;

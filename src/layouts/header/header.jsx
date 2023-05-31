@@ -3,7 +3,6 @@ import {
     HeaderWrapper,
     HoursWrapper,
     Text,
-    TriColorLine,
     ContactsWrapper,
 } from "./styled"
 import { Container } from "../../assets/container";
@@ -23,7 +22,6 @@ export const Header = () => {
                     <Text>Ми працюємо: Понеділок - Пʼятниця з 9:00 до 17:00</Text>
                 </Container>
             </HoursWrapper>
-            <TriColorLine />
             <Container>
                 <ContactsWrapper>
                         <Logo
