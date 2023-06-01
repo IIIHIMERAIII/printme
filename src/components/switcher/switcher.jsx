@@ -49,7 +49,7 @@ export const Switcher = () => {
     <p>{text.about}</p>
   </TabContent>
   <TabContent isActive={activeTab === 2} className={activeTab === 2 ? 'visible' : ''}>
-    <p>{text.about2}</p>
+    {text.about2}
   </TabContent>
   <TabContent isActive={activeTab === 3} className={activeTab === 3 ? 'visible' : ''}>
     <ClientsList>

@@ -92,7 +92,7 @@ a {
   flex-direction: column;
 }
 
-.tab2_list li::before {
+.tab2_list p::before {
   content: '•';
   color: var(--orange);
   margin-right: 0.5em;
