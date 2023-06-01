@@ -8,6 +8,9 @@ import {
   ClientsList,
   ClientsListItem,
   ClientsIcon,
+  MarkedList,
+  MarkedListItem,
+  Dot,
 } from "./styled"
 import { Button } from "../button/button";
 import { TabButton } from "../tabButton/tabButton";
@@ -49,7 +52,11 @@ export const Switcher = () => {
     <p>{text.about}</p>
   </TabContent>
   <TabContent isActive={activeTab === 2} className={activeTab === 2 ? 'visible' : ''}>
-    {text.about2}
+    <MarkedList>
+      {text.about2.map((item, index) =>
+          <MarkedListItem key={index}><Dot>•</Dot><p>{item}</p></MarkedListItem>
+          )}
+    </MarkedList>
   </TabContent>
   <TabContent isActive={activeTab === 3} className={activeTab === 3 ? 'visible' : ''}>
     <ClientsList>

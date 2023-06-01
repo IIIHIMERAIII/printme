@@ -84,20 +84,6 @@ a {
   transition: transform 0.3s ease-out;
 }
 
-/*Tabs*/
-
-.tab2_list {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.tab2_list p::before {
-  content: '•';
-  color: var(--orange);
-  margin-right: 0.5em;
-}
-
 /* BtnTabs */
 
 .custom_btn {

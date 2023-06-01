@@ -41,3 +41,7 @@ font-family: 'Play',sans-serif;
     }
   }
 `;
+
+export const ContactLink = styled.a`
+color: ${colors.primaryBlack};
+`;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints } from "../../assets/theme";
+import { breakpoints, colors } from "../../assets/theme";
 
 export const SwitcherWrapper = styled.div`
 align-items: center;
@@ -107,4 +107,21 @@ align-items: center;
 
 export const ClientsIcon = styled.img`
 width: 100%;
+`;
+
+export const MarkedList = styled.ul`
+display: flex;
+flex-direction: column;
+gap: 10px;
+`;
+
+export const MarkedListItem = styled.li`
+display: flex;
+align-items: baseline;
+`;
+
+export const Dot = styled.span`
+color: ${colors.orange};
+margin-right: 5px;
+font-size: 26px;
 `;
