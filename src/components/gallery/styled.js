@@ -48,30 +48,31 @@ export const CategoryList = styled.ul`
 `;
 
 export const ListItem = styled.li`
-height: 210px;
+height: 100%;
+max-height: 210px;
 position: relative;
 width: 40%;
 
 @media screen and (min-width: ${breakpoints.sm}) {
-  height: 340px;
+  max-height: 340px;
    width: 45%;
 }
 
 @media screen and (min-width: ${breakpoints.md}) {
   width: 30%;
-  height: 270px;
+  max-height: 270px;
 }
 
 @media screen and (min-width: ${breakpoints.xl}) {
   width: 20%;
-  height: 360px;
+  max-height: 360px;
 }
 `;
 
 export const ItemLink = styled(Link)`
 width: 100%;
 height: 100%;
-display: inline-flex;
+display: flex;
 position: relative;
 `;
 
@@ -116,12 +117,12 @@ transition: all 0.5s ease-in-out;
 export const ItemImg = styled.img`
 border-radius: 16px 16px 0px 0px;
 display:inline-block;
-height: 100%;
+height: 80%;
 width: 100%;
 `;
 
 export const TitleWrapper = styled.div`
-height: 70px;
+height: 20%;
 padding-top: 10px;
 font-size: 10px;
 background: ${colors.primaryGray};
