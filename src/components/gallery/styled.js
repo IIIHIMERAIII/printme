@@ -48,7 +48,6 @@ export const CategoryList = styled.ul`
 `;
 
 export const ListItem = styled.li`
-height: 100%;
 max-height: 210px;
 position: relative;
 width: 40%;
