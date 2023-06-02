@@ -19,7 +19,6 @@ import {
     SectionLink,
 } from "./styled"
 import { Container } from '../../assets/container';
-import { colors } from "../../assets/theme";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png'
 
@@ -41,7 +40,7 @@ export const Footer = () => {
                 <FooterContainer >
                     <SectionWrapper>
                         <SectionList>
-                            <SectionTitle style={{borderBottom: `2px solid ${colors.blue}`}}>Завітайте до нас</SectionTitle>
+                            <SectionTitle>Завітайте до нас</SectionTitle>
                             <SectionListItem>
                                 <SectionText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </SectionText>
                             </SectionListItem>
@@ -52,7 +51,7 @@ export const Footer = () => {
                     </SectionWrapper>
                     <SectionWrapper>
                         <SectionList>
-                            <SectionTitle style={{borderBottom: `2px solid ${colors.pink}`}}>Послуги</SectionTitle>
+                            <SectionTitle>Послуги</SectionTitle>
                             {servicesItems.map((item, index) => (
                                <SectionListItem key={index}>
                                      <SectionLink to={`/product/${item.id}`}>{item.title}</SectionLink>
@@ -62,7 +61,7 @@ export const Footer = () => {
                     </SectionWrapper>
                     <SectionWrapper>
                             <SectionList>
-                            <SectionTitle style={{borderBottom: `2px solid ${colors.orange}`}}>Навігація</SectionTitle>
+                            <SectionTitle>Навігація</SectionTitle>
                              {navItems.map((item, index) => (
                                <SectionListItem key={index}>
                                      <SectionLink to={item.redirect}>{item.title}</SectionLink>

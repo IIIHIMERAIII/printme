@@ -4,6 +4,7 @@ import { colors, vars, breakpoints } from "../../assets/theme";
 
 export const FooterWrapper = styled.footer`
 background: ${colors.primaryGray};
+border-top: 3px solid ${colors.orange};
 `;
 
 export const FooterContainer = styled.div`
@@ -12,7 +13,7 @@ margin-right: auto;
 margin-left: auto;
 padding-right: 15px;
 padding-left: 15px;
-border-top: 3px solid ${colors.orange};
+
 
 @media screen and (min-width: ${breakpoints.md}) {
     display: flex;
@@ -43,7 +44,7 @@ font-size: 20px;
 color: ${colors.primaryWhite};
 padding-bottom: 15px;
 margin-bottom: 10px;
-border-bottom: 2px solid ${colors.pink};
+border-bottom: 2px solid ${colors.orange};
 `;
 
 export const SectionList = styled.ul`

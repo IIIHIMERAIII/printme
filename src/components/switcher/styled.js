@@ -29,6 +29,7 @@ export const BtnWrapper = styled.div`
 margin-top:10px;
 display: flex;
 gap: 12px;
+width: 100%;
 
 @media screen and (min-width: ${breakpoints.sm}) {
     justify-content: space-between;
@@ -37,6 +38,7 @@ gap: 12px;
     display: flex;
     height: 40px;
     margin-top:20px;
+    
 }
 `;
 
@@ -86,28 +88,6 @@ export const TabContent = styled.div`
   overflow: hidden; 
 `;
 
-export const ClientsList = styled.ul`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 25px;
-
-  @media screen and (min-width: ${breakpoints.md}) {
-    gap: 14px;
-  }
-`;
-
-export const ClientsListItem = styled.li`
-width: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
-`;
-
-export const ClientsIcon = styled.img`
-width: 100%;
-`;
 
 export const MarkedList = styled.ul`
 display: flex;

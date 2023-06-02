@@ -5,9 +5,6 @@ import {
   BtnWrapper,
   ContentWrapper,
   TabContent,
-  ClientsList,
-  ClientsListItem,
-  ClientsIcon,
   MarkedList,
   MarkedListItem,
   Dot,
@@ -16,7 +13,6 @@ import { Button } from "../button/button";
 import { TabButton } from "../tabButton/tabButton";
 import { text } from "../../assets/text";
 
-import { clientsIcons } from "../../assets/arrays";
 
 export const Switcher = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -41,11 +37,6 @@ export const Switcher = () => {
                   onClick={() => handleTabClick(2)}
                   text='Наші переваги'
                 />
-                <TabButton
-                  className={activeTab === 3 ? 'active' : ''}
-                  onClick={() => handleTabClick(3)}
-                  text='Наші клієнти'
-                />
             </BtnWrapper>
 <ContentWrapper>
   <TabContent isActive={activeTab === 1} className={activeTab === 1 ? 'visible' : ''}>
@@ -57,17 +48,6 @@ export const Switcher = () => {
           <MarkedListItem key={index}><Dot>•</Dot><p>{item}</p></MarkedListItem>
           )}
     </MarkedList>
-  </TabContent>
-  <TabContent isActive={activeTab === 3} className={activeTab === 3 ? 'visible' : ''}>
-    <ClientsList>
-      {clientsIcons.map((item, index) => (
-        <ClientsListItem key={index}>
-          <ClientsIcon
-            src={item}
-          />
-        </ClientsListItem>
-      ))}
-    </ClientsList>
   </TabContent>
 </ContentWrapper>
             <Button

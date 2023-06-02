@@ -1,30 +1,36 @@
-import { BrowserRouter, Route, Routes  } from 'react-router-dom';
+import React, { lazy, Suspense} from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
-import { HomePage } from './pages/homePage/home';
-import { ProductsPage } from './pages/productsPage/productsPage';
 import { Header } from './layouts/header/header';
 import { Footer } from './layouts/footer/footer';
-import { AboutPage } from './pages/aboutPage/aboutPage';
-import { GalleriesPage } from './pages/galleriesPage/galleriesPage';
-import { ProductPage } from './pages/productPage/productPage';
-import { GalleryPage } from './pages/galleryPage/gelleryPage';
-import { DocPage } from './pages/docPage/docPage';
+import { Loader } from './components/loader/loader';
 
-function App() {
+const HomePage = lazy(() => import('./pages/homePage/home').then(module => ({ default: module.HomePage })));
+const ProductsPage = lazy(() => import('./pages/productsPage/productsPage').then(module => ({ default: module.ProductsPage })));
+const GalleriesPage = lazy(() => import('./pages/galleriesPage/galleriesPage').then(module => ({ default: module.GalleriesPage })));
+const AboutPage = lazy(() => import('./pages/aboutPage/aboutPage').then(module => ({ default: module.AboutPage })));
+const ProductPage = lazy(() => import('./pages/productPage/productPage').then(module => ({ default: module.ProductPage })));
+const GalleryPage = lazy(() => import('./pages/galleryPage/gelleryPage').then(module => ({ default: module.GalleryPage })));
+const DocPage = lazy(() => import('./pages/docPage/docPage').then(module => ({ default: module.DocPage })));
+const NotFoundPage = lazy(() => import('./pages/notFoundPage/notFoundPage').then(module => ({ default: module.NotFoundPage })));
+
+function App() {  
   return (
     <BrowserRouter basename="/">
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/products" element={<ProductsPage/>} />
-        <Route path="/galleries" element={<GalleriesPage/>} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path='/product/:id' element={<ProductPage />} />
-        <Route path='/gallery/:id' element={<GalleryPage />} />
-        <Route path='/documentation' element={<DocPage />} />
-      </Routes>
-      <Footer/>
+      <Suspense fallback={<Loader/>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/galleries" element={<GalleriesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/gallery/:id" element={<GalleryPage />} />
+          <Route path="/documentation" element={<DocPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+      <Footer />
     </BrowserRouter>
   );
 }
