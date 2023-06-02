@@ -14,7 +14,7 @@ padding-top: 80px;
 padding-bottom: 80px;
 `;
 
-export const GalleryTitle = styled.h3`
+export const GalleryTitle = styled.p`
 font-size: 35px;
 text-align: center;
 margin-bottom: 50px;
