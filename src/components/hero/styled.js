@@ -118,6 +118,7 @@ export const HeroSlider = styled.div`
 export const SliderImg = styled.img`
 display: none;
 border-radius: 16px;
+background: transparent;
 
 @media screen and (min-width: ${breakpoints.xl}) {
   display: inline;
