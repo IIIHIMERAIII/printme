@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { breakpoints } from "../../assets/theme";
+import { Link } from "react-router-dom";
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(Link)`
 display: flex;
 align-items: center;
-
 `;
 
 export const LogoIcon = styled.img`

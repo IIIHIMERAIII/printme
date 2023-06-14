@@ -44,3 +44,4 @@ export const PhotoGallery = ({ items }) => {
         </GalleryWrapper>
 );
 };
+
