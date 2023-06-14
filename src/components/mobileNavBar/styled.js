@@ -3,13 +3,12 @@ import { colors, breakpoints } from "../../assets/theme";
 import { Link } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
-z-index: 3;
+z-index: 20;
 padding-right: 20px;
 padding-left: 20px;
 position: relative;
 align-items: center;
 display: flex;
-z-index: 2;
 height: 65px;
 background: ${colors.primaryGray};
 justify-content: space-between;
@@ -61,7 +60,7 @@ height: 100%;
 export const MenuWrapper = styled.div`
   position: absolute;
   padding: 20px 0;
-  top: ${({ isOpen }) => (isOpen ? '65px' : '-100%')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   left: 0;
   left: 0px;
   width: 100%;
@@ -110,4 +109,20 @@ export const LogoWrapper = styled.div`
 gap: 25px;
 display: flex;
 
+`;
+
+export const NawContainer = styled.div`
+  position: absolute;
+  top: ${({ isOpen }) => (isOpen ? '65px' : '-100%')};
+  left: 0;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+  transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-100%')});
+  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+  justify-content: center;
+  display: flex;
 `;

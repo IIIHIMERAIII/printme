@@ -21,7 +21,7 @@ transition: all 0.8s ease-in-out;
 &::before {
     content: '';
     position: absolute;
-    top: 44%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 101%;

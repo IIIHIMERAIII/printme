@@ -22,6 +22,7 @@ font-size: 50px;
 `;
 
 export const PageSubTitle = styled.div`
+text-align: justify;
 color: ${colors.primaryWhite};
 font-size: 16px;
 margin-bottom: 50px;

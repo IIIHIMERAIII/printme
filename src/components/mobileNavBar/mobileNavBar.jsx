@@ -10,6 +10,7 @@ import {
     NavListItem,
     NavLink,
     LogoWrapper,
+    NawContainer,
 } from "./styled";
 import sprite from '../../images/sprite.svg';
 import logo from '../../images/logo.png';
@@ -58,7 +59,7 @@ export const ModileNavBar = () => {
     };
 
     return (
-            <NavWrapper id="mobileNav">
+      <NavWrapper id="mobileNav">
                 <BurgerBtn aria-label="Open nav menu">
                     <BurgerSvg onClick={handleToggleMenu}>
                          {isMenuOpen ? (
@@ -78,15 +79,17 @@ export const ModileNavBar = () => {
                       onClick={onPress}
                   />
                 </LogoWrapper>
+                <NawContainer isOpen={isMenuOpen} onClick={handleToggleMenu}>
                 <MenuWrapper isOpen={isMenuOpen}>
                     <NavList>
                     {navItems.map((items, index) => (
                             <NavListItem key={index}>
-                                <NavLink to={items.redirect}>{items.title}</NavLink>
+                                <NavLink to={items.redirect} onClick={handleToggleMenu}>{items.title}</NavLink>
                             </NavListItem>
                         ))}
-                    </NavList>
+                  </NavList>
                 </MenuWrapper>
-            </NavWrapper>
+                </NawContainer>
+          </NavWrapper>
     )
 };

@@ -17,6 +17,8 @@ import { Container } from '../../assets/container';
 import { text } from "../../assets/text";
 import { Map } from "../../components/map/map";
 
+import { links } from "../../assets/roots";
+
 import sprite from '../../images/sprite.svg';
 
 
@@ -44,8 +46,8 @@ export const AboutPage = () => {
                                 </ContactsIcon>
                                 <ContactsTitle>Телефон</ContactsTitle>
                             </TitleWrapper>
-                            <ContactSubTitle>{`+38 (050) 404 96 36`}</ContactSubTitle>
-                            <ContactSubTitle>{`+38 (068) 404 96 36`}</ContactSubTitle>
+                            <ContactSubTitle href='tel:+380504049636'>{`+38 (050) 404 96 36`}</ContactSubTitle>
+                            <ContactSubTitle href= 'tel:+380684049636'> {`+38 (068) 404 96 36`}</ContactSubTitle>
                         </ContactsListItem>
                         <ContactsListItem>
                             <TitleWrapper>
@@ -54,8 +56,13 @@ export const AboutPage = () => {
                                 </ContactsIcon>
                                 <ContactsTitle>Адреса</ContactsTitle>
                             </TitleWrapper>
-                            <ContactSubTitle>м. Полтава</ContactSubTitle>
-                            <ContactSubTitle>вул. Пушкіна, 53, оф. 11</ContactSubTitle>
+                            <ContactSubTitle
+                                href={links.googleMaps}
+                                target='_blank'
+                                rel="noreferrer"
+                                style={{ gap: '10px', display: 'flex', flexDirection: 'column' }}>
+                                <p>м. Полтава </p> <p>вул. Пушкіна, 53, оф. 11 </p>
+                            </ContactSubTitle>
                         </ContactsListItem>
                         <ContactsListItem>
                             <TitleWrapper>
@@ -64,7 +71,7 @@ export const AboutPage = () => {
                                 </ContactsIcon>
                                 <ContactsTitle>Пошта</ContactsTitle>
                             </TitleWrapper>
-                            <ContactSubTitle>exgrafika17@gmail.com</ContactSubTitle>
+                            <ContactSubTitle href='mailto:exgrafika17@gmail.com'>exgrafika17@gmail.com</ContactSubTitle>
                         </ContactsListItem>
                           <ContactsListItem>
                             <TitleWrapper>

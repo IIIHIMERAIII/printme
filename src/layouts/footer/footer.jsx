@@ -17,6 +17,9 @@ import {
     SectionListItem,
     SectionText,
     SectionLink,
+    RefLink,
+    MobileFooter,
+    ContactsListMobile,
 } from "./styled"
 import { Container } from '../../assets/container';
 import sprite from '../../images/sprite.svg';
@@ -24,6 +27,7 @@ import logo from '../../images/logo.png'
 
 import { navItems } from "../../assets/arrays";
 import { servicesItems } from "../../assets/arrays";
+import { links } from "../../assets/roots";
 
 
 
@@ -37,12 +41,27 @@ export const Footer = () => {
     return (
         <>
             <FooterWrapper>
+                <MobileFooter>
+                        <RefLink
+                                href={links.googleMaps}
+                                target='_blank'
+                                rel="noreferrer"
+                            >м. Полтава <br /> вул. Пушкіна, 53, оф. 11
+                        </RefLink>
+                        <ContactsListMobile>
+                        {contactsItems.map((item, index) => (
+                            <ContactsListItem key={index}>
+                                  <ContactsLink href={item.href}>{item.target}</ContactsLink>
+                            </ContactsListItem>
+                        ))}
+                        </ContactsListMobile>
+                </MobileFooter>
                 <FooterContainer >
                     <SectionWrapper>
                         <SectionList>
                             <SectionTitle>Завітайте до нас</SectionTitle>
                             <SectionListItem>
-                                <SectionText>м. Полтава <br /> вул. Пушкіна, 53, оф. 11 </SectionText>
+
                             </SectionListItem>
                             <SectionListItem style={{marginTop: '50px'}}>
                                 <SectionText>Будні дні: 9:00 - 17:00 <br /> Вихідні: Cуббота, Неділя</SectionText>

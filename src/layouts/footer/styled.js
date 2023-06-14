@@ -170,3 +170,43 @@ export const RightsTitle = styled.p`
 font-size: 12px;
 color: ${colors.primaryWhite};
 `;
+
+export const RefLink = styled.a`
+
+color: ${colors.primaryWhite};
+transition: ${vars.ColorTransition};
+
+&:hover,
+&:focus
+{
+    color: ${colors.orange}
+}
+`;
+
+export const MobileFooter = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 25px;
+padding-top: 30px;
+padding-bottom: 30px;
+
+@media screen and (min-width: ${breakpoints.sm}) {
+flex-direction: row;
+}
+
+@media screen and (min-width: ${breakpoints.md}) {
+    display: none;
+}
+`;
+
+export const ContactsListMobile = styled.ul`
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+@media screen and (min-width: ${breakpoints.md}) {
+    display: none;
+}
+`;

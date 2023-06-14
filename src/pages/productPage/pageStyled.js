@@ -8,8 +8,13 @@ const glowingAnimation = keyframes`
 `;
 
 export const ProductWrapper = styled.div`
+padding-top: 100px;
+padding-bottom: 100px;
+
+@media screen and (min-width: ${breakpoints.md}){
 padding-top: 160px;
 padding-bottom: 120px;
+}
 `;
 
 export const ProductCard = styled.div`
@@ -25,8 +30,13 @@ flex-direction: column;
 
 export const AnimationWrapper = styled.div`
 position: relative;
-width: 100%;
+width: 70%;
 height: 100%;
+
+@media screen and (min-width: ${breakpoints.md}){
+width: 100%;
+}
+
 `;
 
 
@@ -88,22 +98,30 @@ export const TextWrapper = styled.div`
 `;
 
 export const ProductImg = styled.img`
-height: 600px;
+height: 300px;
 border-radius: 16px;
 width: 100%;
+
+@media screen and (min-width: ${breakpoints.md}) {
+height: 600px;
+}
+
 `;
 
 export const ProductTitle = styled.h1`
+text-align: center;
 font-size: 50px;
 margin-bottom: 20px;
+
+@media screen and (min-width: ${breakpoints.md}) {
+text-align: center;
+}
 `;
 
 export const ProductDescr = styled.p`
 margin-bottom: 50px;
 text-align: justify;
-
-@media screen and (min-width: ${breakpoints.xl}) {
-font-size: 20px;
-}
+font-size: 19px;
+line-height: 1.8rem;
 `;
 

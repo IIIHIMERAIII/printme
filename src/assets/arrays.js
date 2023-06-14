@@ -72,7 +72,9 @@ import g58 from '../images/g58.webp';
 import g59 from '../images/g59.webp';
 import g60 from '../images/g60.webp';
 import g61 from '../images/g61.webp';
-import g62 from '../images/g62.webp';   
+import g62 from '../images/g62.webp';
+import g63 from '../images/g63.webp'; 
+import g64 from '../images/g64.webp';    
 
 
 // nav items array
@@ -139,6 +141,8 @@ export const projectsItems = [
                 { original: g42, thumbnail:g42},
                 { original: g43, thumbnail:g43},
                 { original: g41, thumbnail:g41},
+                { original: g63, thumbnail:g63},
+                { original: g64, thumbnail:g64},
             ]
         },
     {title: 'Роботи по брендуванню автотранспорта',

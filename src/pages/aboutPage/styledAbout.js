@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, breakpoints } from "../../assets/theme";
+import { colors, breakpoints, vars } from "../../assets/theme";
 
 export const AboutWrapper = styled.div`
 padding-top:160px;
@@ -77,8 +77,17 @@ font-size: 22px;
 font-weight: 600;
 `;
 
-export const ContactSubTitle = styled.p`
+export const ContactSubTitle = styled.a`
 font-size: 18px;
+cursor: pointer;
+color: ${colors.primaryBlack};
+transition: ${vars.ColorTransition};
+
+&:hover,
+&:focus
+{
+    color: ${colors.orange}
+}
 `;
 
 export const ContactsIcon = styled.svg`

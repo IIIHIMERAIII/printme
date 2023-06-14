@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors, breakpoints } from "../../assets/theme";
+import { colors, breakpoints} from "../../assets/theme";
 
 export const ContactsWrapper = styled.div`
 

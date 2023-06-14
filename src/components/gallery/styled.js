@@ -33,6 +33,7 @@ export const CategoryList = styled.ul`
   flex-wrap: wrap;
   gap: 35px;
   justify-content: center;
+  justify-content: space-between;
 
   @media screen and (min-width: ${breakpoints.sm}) {
     gap: 30px;

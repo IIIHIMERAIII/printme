@@ -302,6 +302,7 @@ a {
   .rightSliderBtn, 
   .leftSliderBtn {
     top: 85%;
+    z-index: 10;
   }
 
   .rightSliderBtn {

@@ -14,7 +14,7 @@ export const RecentProjects = () => {
     return (
         <ProjectsWrapper style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingBottom: '120px' }} >
             <ProjectsTitle>Наші роботи</ProjectsTitle>
-            <ProjectsSybTitle>Завдяки вам ми завжди в пошуках натхнення</ProjectsSybTitle>
+            <ProjectsSybTitle>Завдяки Вам ми завжди в пошуках натхнення</ProjectsSybTitle>
             <PreviewGallery
                 items={projectsItems}
             />
