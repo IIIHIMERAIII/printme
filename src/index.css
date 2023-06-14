@@ -355,6 +355,10 @@ a {
   height: 100px;
 }
 
+.image-gallery-icon {
+  color: var(--orange);
+}
+
 /* media rules  */
 
 @media screen and (min-width: 420px) {

@@ -9,7 +9,7 @@ import {
 import ex1 from '../../images/g24.webp';
 import ex2 from '../../images/g29.webp';
 import ex3 from '../../images/g3.webp';
-import ex4 from '../../images/g26.webp';
+import ex4 from '../../images/g51.webp';
 
 const items = [ex1, ex2, ex3, ex4];
 const transitionDuration = 200;

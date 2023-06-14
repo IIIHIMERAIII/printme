@@ -1,11 +1,11 @@
 import ImageGallery from 'react-image-gallery';
 import { ReactComponent as ArrowLeftIcon } from '../../images/circle-left.svg';
 import { ReactComponent as ArrowRightIcon } from '../../images/circle-right.svg';
-import { SliderBtn } from '../sliderButton/styled';
-import { colors } from '../../assets/theme';
+
 
 import {
-    GalleryWrapper,
+  GalleryWrapper,
+  GalleryButton,
 } from './styled';
 import { Container } from '../../assets/container';
 
@@ -18,26 +18,26 @@ export const PhotoGallery = ({ items }) => {
                 <ImageGallery
                     items={items}
                     renderLeftNav={(onClick, disabled) => (
-                      <SliderBtn
+                      <GalleryButton
                         type="button"
                         className={`image-gallery-icon image-gallery-left-nav ${disabled ? 'disabled' : ''}`}
                         disabled={disabled}
                         onClick={onClick}
-                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`${colors.orange}`}}
+                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`trasparent`}}
                       >
                         <ArrowLeftIcon />
-                      </SliderBtn>
+                      </GalleryButton>
                     )}
                     renderRightNav={(onClick, disabled) => (
-                    <SliderBtn
+                    <GalleryButton
                         type="button"
                         className={`image-gallery-icon image-gallery-right-nav ${disabled ? 'disabled' : ''}`}
                         disabled={disabled}
                         onClick={onClick}
-                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`${colors.orange}`}}    
+                        style={{boxShadow: 'none', animation: 'none', transition: 'none', backgroundColor:`trasparent`}}    
                       >
                         <ArrowRightIcon />
-                      </SliderBtn>
+                      </GalleryButton>
                     )}
                     />
             </Container>

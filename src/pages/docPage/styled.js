@@ -72,7 +72,7 @@ transition: ${vars.ColorTransition};
 
 export const Text = styled.div`
 color: ${colors.primaryWhite};
-text-align: center;
+text-align: justify;
 font-size: 16px;
 margin-top: 50px;
 
