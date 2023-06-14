@@ -1,17 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+
 import { LogoWrapper, LogoIcon} from './styled';
 
-export const Logo = ({ src }) => {
-     const navigate = useNavigate();
-
-    const onPress = () => {
-        navigate('/');
-    };
+export const Logo = ({ src }) => {  
     
     return (
-        <LogoWrapper>
+        <LogoWrapper to='/'>
             <LogoIcon
-                onClick={onPress}
                 src={src}
             />
         </LogoWrapper>
