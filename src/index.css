@@ -369,6 +369,16 @@ a {
 
   .custom_btn span  {
     font-size: 15px;
+    }
+  
+  .image-gallery-content.fullscreen {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 868px) {
+  .image-gallery-content.fullscreen {
+    top: 10%;
   }
 }
 
@@ -377,4 +387,7 @@ a {
   .leftSliderBtn {
       top: 50%;
     }
+  .image-gallery-content.fullscreen {
+  top: 30%;
+  }
 }
