@@ -25,6 +25,7 @@ transition: top 0.5s ease-in-out, max-height 0.5s ease-in-out;
   width: 768px;
   border-radius: 0;
   max-height: 65px;
+  border-bottom: 3px solid ${colors.orange};
 }
 
 @media screen and (min-width: ${breakpoints.xl}) {

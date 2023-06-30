@@ -15,10 +15,10 @@ justify-content: space-between;
 width: 100%;
 position: absolute;
 
+
 &.sticky {
   position: fixed;
   top: 0;
-  border-radius: 0;
 }
 
 @media screen and (min-width: ${breakpoints.sm}) {
