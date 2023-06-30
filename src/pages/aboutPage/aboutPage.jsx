@@ -80,7 +80,7 @@ export const AboutPage = () => {
                                 </ContactsIcon>
                                 <ContactsTitle>Viber</ContactsTitle>
                             </TitleWrapper>
-                            <ContactSubTitle>{`+38 (068) 404 96 36`}</ContactSubTitle>
+                            <ContactSubTitle href="viber://add?number=+380684049636">{`+38 (068) 404 96 36`}</ContactSubTitle>
                         </ContactsListItem>
                     </ContactsList>
                     <Map />
