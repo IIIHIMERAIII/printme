@@ -16,7 +16,7 @@ export const ProductsPage = () => {
     return (
         <>
         <Gallery
-            title='Наша продукція'
+            title='Наші послуги'
             array={servicesItems}
         />
         </>
